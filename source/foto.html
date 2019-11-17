@@ -7,15 +7,14 @@
   <body>
 
     <header class="header">
-      <div class="main-nav__wr">
         <nav class="main-nav">
           <button class="main-nav__button main-nav__button_close"></button>
           <ul class="main-nav__nav-list">
             <li class="main-nav__nav-item main-nav__nav-item_active">
-              <a>Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="main-nav__nav-item">
-              <a href="foto.html">Фото и видео</a>
+              <a>Фото и видео</a>
             </li>
             <li class="main-nav__nav-item">
               <a href="form.html">Форма отзыва</a>
@@ -26,10 +25,9 @@
           </ul>
           <button class="main-nav__button_open"></button>
           <a class="header__logo">
-            <img> <!--логотип-->
+            <img src="#" alt="Логотип Седоны"> <!--логотип-->
           </a>
         </nav>
-      </div>
     </header>
 
     <main class="main">
@@ -37,55 +35,53 @@
 
       <section class="photo-gallery">
         <h2 class="visually-hidden">Фотогалерия</h2>
-        <div class="text__wr">
-          <p class="main__description">Фото и видео</p>
+          <h3 class="main__description">Фото и видео</h3>
           <p class="main__remark">Не можете решиться на путешествие из-за курса?
             Фотографии помогут вам забыть о политике и экономике.
           </p>
-        </div>
         <ul class="photo-gallery__list">
           <li class="photo-gallery__item">
-            <div class="photo-gallery__img">
-              <img src="https://via.placeholder.com/150x150">
-            </div>
+            <figure class="photo-gallery__img">
+              <img src="https://via.placeholder.com/150x150" alt="Дорога">
+            </figure>
             <h3 class="photo-gallery__title">Неродные просторы</h3>
             <p class="photo-gallery__author">Автор фото: Борис</p>
             <div class="like">
-              <img> <!--вставить svg-->
-              <p class="like__value">1350</p>
+              <button class="like__button"></button>
+              <span class="like__value">1350</span>
             </div>
           </li>
           <li class="photo-gallery__item">
-              <div class="photo-gallery__img">
-                <img src="https://via.placeholder.com/150x150">
-              </div>
+              <figure class="photo-gallery__img">
+                <img src="https://via.placeholder.com/150x150" alt="Флора">
+              </figure>
               <h3 class="photo-gallery__title">Местная растительность</h3>
               <p class="photo-gallery__author">Автор фото: Сергей</p>
               <div class="like">
-                <img> <!--вставить svg-->
-                <p class="like__value">143</p>
+                <button class="like__button"></button>
+                <span class="like__value">143</span>
               </div>
             </li>
             <li class="photo-gallery__item">
-              <div class="photo-gallery__img">
-                <img src="https://via.placeholder.com/150x150">
-              </div>
+              <figure class="photo-gallery__img">
+                <img src="https://via.placeholder.com/150x150" alt="Серпантин">
+              </figure>
               <h3 class="photo-gallery__title">Дорога на север</h3>
               <p class="photo-gallery__author">Автор фото: Петр</p>
               <div class="like">
-                <img> <!--вставить svg-->
-                <p class="like__value">96</p>
+                <button class="like__button"></button>
+                <span class="like__value">96</span>
               </div>
             </li>
             <li class="photo-gallery__item">
-              <div class="photo-gallery__img">
-                <img src="https://via.placeholder.com/150x150">
-              </div>
+              <figure class="photo-gallery__img">
+                <img src="https://via.placeholder.com/150x150" alt="Каньон">
+              </figure>
               <h3 class="photo-gallery__title">Мост дьявола</h3>
               <p class="photo-gallery__author">Автор фото: Антон</p>
               <div class="like">
-                <img> <!--вставить svg-->
-                <p class="like__value">254</p>
+                <button class="like__button"></button>
+                <span class="like__value">254</span>
               </div>
             </li>
         </ul>
@@ -93,44 +89,42 @@
 
       <section class="video-gallery">
         <h2 class="visually-hidden">Видеогалерия</h2>
-        <div class="text__wr">
-          <p class="main__description">Все еще сомневаетесь?</p>
+          <h3 class="main__description">Все еще сомневаетесь?</h3>
           <p class="main__remark"> Смотрите видеопрезентацию и
             скорее за бигите за билетами, пока они не подорожали в очередной раз!
           </p>
-        </div>
         <div class="video-gallery__clip">
-          <video controls preload="auto" width="500">
-            <sourse src="#" type="video/mp4"></sourse>
-          </video>
+          <video poster="#" width="500"></video>
+          <div class="video-gallery__progress-bar">
+            <button class="video-gallery__slider">Ползунок</button>
+          </div>
+          <button class="video-gallery__replay">Воспроизвести заново</button>
+          <button class="video-gallery__subtitle">Субтитры</button>
+          <button class="video-gallery__fullscreen">На весь экран</button>
         </div>
       </section>
 
     </main>
 
     <footer class="footer">
-      <div class="footer__wr">
-        <div class="footer__social social">
-          <p class="social__title">#visitsedona</p>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link_twitter" href="twitter.com">twitter</a>
+          <p class="footer__social__title">#visitsedona</p>
+          <ul class="footer__social__list">
+            <li class="footer__social__item">
+              <a class="footer__social__link" href="twitter.com">twitter</a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link_facebook" href="facebook.com">facebook</a>
+            <li class="footer__social__item">
+              <a class="footer__social__link" href="facebook.com">facebook</a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link_youtube" href="youtube.com">youtube</a>
+            <li class="footer__social__item">
+              <a class="footer__social__link" href="youtube.com">youtube</a>
             </li>
           </ul>
-        </div>
-        <div class="footer__copyright copiright">
-          <a class="copyright__link">
-            <p class="copiright__title">Разработано</p>
-            <img> <!--вставить svg-->
+        <div class="footer__footer__copyright">
+          <a class="footer__copyright__link">
+            <span class="footer__copiright__title">Разработано</span>
+            <img src="#" alt="Логотип Академии"> <!--вставить svg-->
           </a>
         </div>
-      </div>
     </footer>
   </body>
 </html>
