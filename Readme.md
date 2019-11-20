@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Dmitry](https://up.htmlacademy.ru/adaptive/18/user/1176515).
-* Наставник: `Неизвестно`.
+* Наставник: `Михаил Поданев`.(https://htmlacademy.ru/profile/mpodanev)
 
 ---
 
