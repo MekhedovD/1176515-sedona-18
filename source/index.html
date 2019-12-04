@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
 
@@ -11,28 +12,33 @@
           <button class="main-nav__button main-nav__button_close"></button>
           <ul class="main-nav__nav-list">
             <li class="main-nav__nav-item main-nav__nav-item_active">
-              <a>Главная</a>
+              <a class="main-nav__text">Главная</a>
             </li>
             <li class="main-nav__nav-item">
-              <a href="foto.html">Фото и видео</a>
+              <a class="main-nav__text" href="foto.html">Фото и видео</a>
             </li>
             <li class="main-nav__nav-item">
-              <a href="form.html">Форма отзыва</a>
+              <a class="main-nav__text" href="form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__nav-item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <a class="main-nav__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
           <button class="main-nav__button_open"></button>
-          <a class="header__logo">
-            <img src="#" alt="Логотип Седоны"> <!--логотип-->
+          <a class="main-nav__header__logo">
+            <img src="img/logo-sedona-mobile.svg" alt="Logo">
           </a>
         </nav>
     </header>
 
     <main class="main">
 
-      <img class="main__bg_big" src="#" alt="Привественный текс"><!--вставить svg фоновой картинкой-->
+      <section class="main__bg">
+        <h1 class="visually-hidden">Седона для туристов</h1>
+        
+        <!-- <img src="img/bg-back-mobile@1x.jpg" width="500" height="300" alt="Привественный текс"> -->
+        <img src="img/text-sedona-index.svg" alt="Добро пожаловать в Седону">
+      </section>
 
       <section class="advantages">
             <h3 class="main__description">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
@@ -46,7 +52,7 @@
                 <p class="advantages__title__remark">Седона не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <figure class="advantages__item_img">
-                <img src="https://via.placeholder.com/150x150" alt="Дом">
+                <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Дом">
               </figure>
                 <ul class="benefits">
                   <li class="benefits__item">
@@ -72,27 +78,29 @@
                 <p class="advantages__title__number-advantage">— №2 —</p>
                 <p class="advantages__title__remark">Да, по нему можно пройтись если Вы осмелитесь, конечно</p>
               </div>
-                <img src="https://via.placeholder.com/150x150" alt="Скалы">
+              <figure class="advantages__item_img">
+                <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Скалы">
+              </figure>
             </li>
             <li class="advantages__item advantages__item_rest">
               <div class="advantages__title advantages-title_gray">
-                <p class="advantages__title__header">Небольшая площадь</p>
-                <p class="advantages__title__number-advantage">— №3 —</p>
-                <p class="advantages__title__remark">Все интересные места находятся очень близко</p>
+                <p class="advantages__title__header title_black">Небольшая площадь</p>
+                <p class="advantages__title__number-advantage title_black">— №3 —</p>
+                <p class="advantages__title__remark title_black">Все интересные места находятся очень близко</p>
               </div>
             </li>
             <li class="advantages__item advantages__item_rest">
               <div class="advantages__title advantages-title_gray">
-                <p class="advantages__title__header">Красивая дорога</p>
-                <p class="advantages__title__number-advantage">— №4 —</p>
-                <p class="advantages__title__remark">Ехать в Седону с Лас-Вегаса совсем не скучно!</p>
+                <p class="advantages__title__header title_black">Красивая дорога</p>
+                <p class="advantages__title__number-advantage title_black">— №4 —</p>
+                <p class="advantages__title__remark title_black">Ехать в Седону с Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="advantages__item advantages__item_rest">
               <div class="advantages__title advantages-title_gray">
-                <p class="advantages__title__header">Мало туристов</p>
-                <p class="advantages__title__number-advantage">— №5 —</p>
-                <p class="advantages__title__remark">Большинство едет в Гранд-Каньон и толпится там</p>
+                <p class="advantages__title__header title_black">Мало туристов</p>
+                <p class="advantages__title__number-advantage title_black">— №5 —</p>
+                <p class="advantages__title__remark title_black">Большинство едет в Гранд-Каньон и толпится там</p>
               </div>
             </li>
           </ul>
@@ -128,7 +136,7 @@
         <div class="footer__copyright">
           <a class="footer__copyright__link">
             <span class="footer__copiright__title">Разработано</span>
-            <img src="#" alt="Логотип Академии"> <!--вставить svg-->
+            <img src="img/htmlacademy.svg" width="50" height="50" alt="Логотип Академии"> <!--вставить svg-->
           </a>
         </div>
     </footer>

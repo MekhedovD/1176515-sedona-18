@@ -1,0 +1,51 @@
+@import "../variable.less";
+@import "../function.less";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.main {
+  background-color: @bg__main;
+}
+
+.photo-gallery__list {
+  text-align: center;
+}
+
+.photo-gallery__title {
+  .font-base();
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.44;
+  color: @text_black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.photo-gallery__author {
+  .font-base();
+  font-size: 14px;
+  line-height: 1.71;
+  color: @text_black;
+  text-align: center;
+}
+
+.like__value {
+  .font-base();
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  color: @text_black;
+}
+

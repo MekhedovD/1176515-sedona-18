@@ -1,0 +1,46 @@
+@import "../variable.less";
+@import "../function.less";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+ul {
+  list-style: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.main-nav__nav-item {
+  background-color: @bg__mainitem;
+  color: @text_white;
+
+}
+
+.main-nav__nav-list {
+  text-align: center;
+}
+
+.main-nav__text{
+  .font-base();
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 2.22;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @text_white;
+}
+
+.main-nav__header__logo {
+  display: flex;
+  justify-content: center;
+  margin-top: -18px;
+}

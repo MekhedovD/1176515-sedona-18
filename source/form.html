@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
 
@@ -11,26 +12,33 @@
           <button class="main-nav__button main-nav__button_close"></button>
           <ul class="main-nav__nav-list">
             <li class="main-nav__nav-item main-nav__nav-item_active">
-              <a href="index.html">Главная</a>
+              <a class="main-nav__text" href="index.html">Главная</a>
             </li>
             <li class="main-nav__nav-item">
-              <a href="foto.html">Фото и видео</a>
+              <a class="main-nav__text" href="foto.html">Фото и видео</a>
             </li>
             <li class="main-nav__nav-item">
-              <a>Форма отзыва</a>
+              <a class="main-nav__text">Форма отзыва</a>
             </li>
             <li class="main-nav__nav-item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <a class="main-nav__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
           <button class="main-nav__button_open"></button>
-          <a class="header__logo">
-            <img src="#" alt="Логотип Седоны"> <!--логотип-->
+          <a class="main-nav__header__logo">
+            <img src="img/logo-sedona-mobile.svg" alt="Logo">
           </a>
         </nav>
     </header>
 
     <main class="main">
+      <h1 class="visually-hidden">Седона для туристов</h1>
+
+      <section class="main__bg">
+         <!-- <img src="img/bg-back-mobile@1x.jpg" width="500" height="300" alt="Привественный текс"> -->
+        <img src="img/text-sedona.svg" alt="Добро пожаловать в Седону">
+      </section>
+
       <section class="feedback">
           <h2 class="visually-hidden">Обратная связь</h2>
             <h3 class="main__description">Оставьте свой отзыв</h3>
@@ -111,10 +119,10 @@
               <a class="footer__social__link" href="youtube.com">youtube</a>
             </li>
           </ul>
-        <div class="footer__footer__copyright">
+        <div class="footer__copyright">
           <a class="footer__copyright__link">
             <span class="footer__copiright__title">Разработано</span>
-            <img src="#" alt="Логотип Академии"> <!--вставить svg-->
+            <img src="img/htmlacademy.svg" width="50" height="50" alt="Логотип Академии"> <!--вставить svg-->
           </a>
         </div>
     </footer>
