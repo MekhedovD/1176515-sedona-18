@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
 
@@ -11,28 +12,31 @@
           <button class="main-nav__button main-nav__button_close"></button>
           <ul class="main-nav__nav-list">
             <li class="main-nav__nav-item main-nav__nav-item_active">
-              <a>Главная</a>
+              <a class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__nav-item">
-              <a href="foto.html">Фото и видео</a>
+              <a class="main-nav__link" href="foto.html">Фото и видео</a>
             </li>
             <li class="main-nav__nav-item">
-              <a href="form.html">Форма отзыва</a>
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__nav-item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
           <button class="main-nav__button_open"></button>
-          <a class="header__logo">
-            <img src="#" alt="Логотип Седоны"> <!--логотип-->
+          <a class="main-nav__header-logo">
+            <img src="img/logo-sedona-mobile.svg" alt="Logo">
           </a>
         </nav>
     </header>
 
     <main class="main">
 
-      <img class="main__bg_big" src="#" alt="Привественный текс"><!--вставить svg фоновой картинкой-->
+      <section class="main-bg">
+        <h1 class="visually-hidden">Седона для туристов</h1>
+        <img src="img/text-sedona-index.svg" alt="Добро пожаловать в Седону">
+      </section>
 
       <section class="advantages">
             <h3 class="main__description">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
@@ -41,12 +45,12 @@
           <ul class="advantages__list">
             <li class="advantages__item advantages__item_foto">
               <div class="advantages__title advantages-title_blue">
-                <p class="advantages__title__header">Настоящий городок</p>
-                <p class="advantages__title__number-advantage">— №1 —</p>
-                <p class="advantages__title__remark">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+                <p class="advantages__title-header">Настоящий городок</p>
+                <p class="advantages__title-number">— №1 —</p>
+                <p class="advantages__title-remark">Седона не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <figure class="advantages__item_img">
-                <img src="https://via.placeholder.com/150x150" alt="Дом">
+                <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Дом">
               </figure>
                 <ul class="benefits">
                   <li class="benefits__item">
@@ -68,31 +72,33 @@
             </li>
             <li class="advantages__item advantages__item_foto">
               <div class="advantages__title advantages-title_blue">
-                <p class="advantages__title__header">Там есть мост дьявола</p>
-                <p class="advantages__title__number-advantage">— №2 —</p>
-                <p class="advantages__title__remark">Да, по нему можно пройтись если Вы осмелитесь, конечно</p>
+                <p class="advantages__title-header">Там есть мост дьявола</p>
+                <p class="advantages__title-number">— №2 —</p>
+                <p class="advantages__title-remark">Да, по нему можно пройтись если Вы осмелитесь, конечно</p>
               </div>
-                <img src="https://via.placeholder.com/150x150" alt="Скалы">
+              <figure class="advantages__item_img">
+                <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Скалы">
+              </figure>
             </li>
             <li class="advantages__item advantages__item_rest">
               <div class="advantages__title advantages-title_gray">
-                <p class="advantages__title__header">Небольшая площадь</p>
-                <p class="advantages__title__number-advantage">— №3 —</p>
-                <p class="advantages__title__remark">Все интересные места находятся очень близко</p>
-              </div>
-            </li>
-            <li class="advantages__item advantages__item_rest">
-              <div class="advantages__title advantages-title_gray">
-                <p class="advantages__title__header">Красивая дорога</p>
-                <p class="advantages__title__number-advantage">— №4 —</p>
-                <p class="advantages__title__remark">Ехать в Седону с Лас-Вегаса совсем не скучно!</p>
+                <p class="advantages__title-header title_black">Небольшая площадь</p>
+                <p class="advantages__title-number title_black">— №3 —</p>
+                <p class="advantages__title-remark title_black">Все интересные места находятся очень близко</p>
               </div>
             </li>
             <li class="advantages__item advantages__item_rest">
               <div class="advantages__title advantages-title_gray">
-                <p class="advantages__title__header">Мало туристов</p>
-                <p class="advantages__title__number-advantage">— №5 —</p>
-                <p class="advantages__title__remark">Большинство едет в Гранд-Каньон и толпится там</p>
+                <p class="advantages__title-header title_black">Красивая дорога</p>
+                <p class="advantages__title-number title_black">— №4 —</p>
+                <p class="advantages__title-remark title_black">Ехать в Седону с Лас-Вегаса совсем не скучно!</p>
+              </div>
+            </li>
+            <li class="advantages__item advantages__item_rest">
+              <div class="advantages__title advantages-title_gray">
+                <p class="advantages__title-header title_black">Мало туристов</p>
+                <p class="advantages__title-number title_black">— №5 —</p>
+                <p class="advantages__title-remark title_black">Большинство едет в Гранд-Каньон и толпится там</p>
               </div>
             </li>
           </ul>
@@ -101,8 +107,8 @@
       <section class="interest">
         <h2 class="visually-hidden">Интерес</h2>
         <div class="interest__wr interest__title">
-          <h3 class="interest__title__header">Заинтересовались?</h3>
-          <p class="interest__title__remark">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <h3 class="interest__title-header">Заинтересовались?</h3>
+          <p class="interest__title-remark">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a href="" class="button interest__bt">Найти гостиницу</a>
         </div>
         <div class="interest__map">
@@ -113,24 +119,24 @@
     </main>
 
     <footer class="footer">
-          <p class="footer__social__title">#visitsedona</p>
-          <ul class="footer__social__list">
-            <li class="footer__social__item">
-              <a class="footer__social__link" href="twitter.com">twitter</a>
-            </li>
-            <li class="footer__social__item">
-              <a class="footer__social__link" href="facebook.com">facebook</a>
-            </li>
-            <li class="footer__social__item">
-              <a class="footer__social__link" href="youtube.com">youtube</a>
-            </li>
-          </ul>
-        <div class="footer__copyright">
-          <a class="footer__copyright__link">
-            <span class="footer__copiright__title">Разработано</span>
-            <img src="#" alt="Логотип Академии"> <!--вставить svg-->
-          </a>
-        </div>
+      <p class="footer__social-title">#visitsedona</p>
+      <ul class="footer__social-list social">
+        <li class="social__item">
+          <a class="social__link social__link_tw" href="twitter.com">twitter</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link_fb" href="facebook.com">facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link_yb" href="youtube.com">youtube</a>
+        </li>
+      </ul>
+      <div class="footer__copyright copyright">
+        <a class="copyright__link">
+          <span class="copyright__title">Разработано</span>
+          <img src="img/htmlacademy.svg" width="50" height="50" alt="Логотип Академии">
+        </a>
+      </div>
     </footer>
   </body>
 </html>

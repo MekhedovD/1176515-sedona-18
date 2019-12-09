@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
 
@@ -11,27 +12,31 @@
           <button class="main-nav__button main-nav__button_close"></button>
           <ul class="main-nav__nav-list">
             <li class="main-nav__nav-item main-nav__nav-item_active">
-              <a href="index.html">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__nav-item">
-              <a>Фото и видео</a>
+              <a class="main-nav__link">Фото и видео</a>
             </li>
             <li class="main-nav__nav-item">
-              <a href="form.html">Форма отзыва</a>
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__nav-item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
           <button class="main-nav__button_open"></button>
-          <a class="header__logo">
-            <img src="#" alt="Логотип Седоны"> <!--логотип-->
+          <a class="main-nav__header-logo">
+            <img src="img/logo-sedona-mobile.svg" alt="Logo">
           </a>
         </nav>
     </header>
 
     <main class="main">
-        <h1 class="visually-hidden">Седона для туристов</h1>
+      <h1 class="visually-hidden">Седона для туристов</h1>
+
+      <section class="main-bg">
+        <img src="img/text-sedona.svg" alt="Добро пожаловать в Седону">
+      </section>
 
       <section class="photo-gallery">
         <h2 class="visually-hidden">Фотогалерия</h2>
@@ -42,7 +47,7 @@
         <ul class="photo-gallery__list">
           <li class="photo-gallery__item">
             <figure class="photo-gallery__img">
-              <img src="https://via.placeholder.com/150x150" alt="Дорога">
+              <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Дорога">
             </figure>
             <h3 class="photo-gallery__title">Неродные просторы</h3>
             <p class="photo-gallery__author">Автор фото: Борис</p>
@@ -53,7 +58,7 @@
           </li>
           <li class="photo-gallery__item">
               <figure class="photo-gallery__img">
-                <img src="https://via.placeholder.com/150x150" alt="Флора">
+                <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Флора">
               </figure>
               <h3 class="photo-gallery__title">Местная растительность</h3>
               <p class="photo-gallery__author">Автор фото: Сергей</p>
@@ -64,7 +69,7 @@
             </li>
             <li class="photo-gallery__item">
               <figure class="photo-gallery__img">
-                <img src="https://via.placeholder.com/150x150" alt="Серпантин">
+                <img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Серпантин">
               </figure>
               <h3 class="photo-gallery__title">Дорога на север</h3>
               <p class="photo-gallery__author">Автор фото: Петр</p>
@@ -75,7 +80,7 @@
             </li>
             <li class="photo-gallery__item">
               <figure class="photo-gallery__img">
-                <img src="https://via.placeholder.com/150x150" alt="Каньон">
+                <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Каньон">
               </figure>
               <h3 class="photo-gallery__title">Мост дьявола</h3>
               <p class="photo-gallery__author">Автор фото: Антон</p>
@@ -91,7 +96,7 @@
         <h2 class="visually-hidden">Видеогалерия</h2>
           <h3 class="main__description">Все еще сомневаетесь?</h3>
           <p class="main__remark"> Смотрите видеопрезентацию и
-            скорее за бигите за билетами, пока они не подорожали в очередной раз!
+            скорее за билетами, пока они не подорожали в очередной раз!
           </p>
         <div class="video-gallery__clip">
           <video poster="#" width="500"></video>
@@ -107,24 +112,24 @@
     </main>
 
     <footer class="footer">
-          <p class="footer__social__title">#visitsedona</p>
-          <ul class="footer__social__list">
-            <li class="footer__social__item">
-              <a class="footer__social__link" href="twitter.com">twitter</a>
-            </li>
-            <li class="footer__social__item">
-              <a class="footer__social__link" href="facebook.com">facebook</a>
-            </li>
-            <li class="footer__social__item">
-              <a class="footer__social__link" href="youtube.com">youtube</a>
-            </li>
-          </ul>
-        <div class="footer__footer__copyright">
-          <a class="footer__copyright__link">
-            <span class="footer__copiright__title">Разработано</span>
-            <img src="#" alt="Логотип Академии"> <!--вставить svg-->
-          </a>
-        </div>
+      <p class="footer__social-title">#visitsedona</p>
+      <ul class="footer__social-list social">
+        <li class="social__item">
+          <a class="social__link social__link_tw" href="twitter.com">twitter</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link_fb" href="facebook.com">facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link_yb" href="youtube.com">youtube</a>
+        </li>
+      </ul>
+      <div class="footer__copyright copyright">
+        <a class="copyright__link">
+          <span class="copyright__title">Разработано</span>
+          <img src="img/htmlacademy.svg" width="50" height="50" alt="Логотип Академии">
+        </a>
+      </div>
     </footer>
   </body>
 </html>
