@@ -6,12 +6,6 @@
   text-align: center;
 }
 
-.advantages__item_rest {
-  background-color: @bg_gray;
-  padding-bottom: 30px;
-  padding-top: 30px;
-}
-
 .advantages__title-header {
   font-family: @font-base;
   font-size: 18px;
@@ -19,7 +13,7 @@
   line-height: 1.24;
   text-transform: uppercase;
   text-align: center;
-  color: @text_white;
+  color: @text-white;
 }
 
 .advantages__title-number,
@@ -29,5 +23,17 @@
   line-height: 1.5;
   text-transform: uppercase;
   text-align: center;
-  color: @text_white;
+  color: @text-white;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__item_foto {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__item_foto {
+    display: flex;
+  }
 }

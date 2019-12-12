@@ -1,5 +1,4 @@
 .footer {
-  font-family: @font-base;
   height: 233px;
   background-color: white;
 }
@@ -11,6 +10,22 @@
   font-weight: bold;
   line-height: 1.24;
   text-align: center;
-  color: @text_black;
+  color: @text-black;
   padding-top: 37px;
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
 }

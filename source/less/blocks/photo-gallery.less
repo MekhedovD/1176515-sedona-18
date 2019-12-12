@@ -8,7 +8,7 @@
   font-size: 16px;
   font-weight: bold;
   line-height: 1.44;
-  color: @text_black;
+  color: @text-black;
   text-align: center;
   text-transform: uppercase;
 }
@@ -18,5 +18,19 @@
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
-  color: @text_black;
+  color: @text-black;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

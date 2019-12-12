@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
@@ -24,7 +25,7 @@
               <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
-          <button class="main-nav__button_open"></button>
+          <button class="main-nav__button main-nav__button_open"></button>
           <a class="main-nav__header-logo">
             <img src="img/logo-sedona-mobile.svg" alt="Logo">
           </a>
@@ -42,67 +43,69 @@
             <h3 class="main__description">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
             <p class="main__remark">Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
         <h2 class="visually-hidden">Преимущества</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item advantages__item_foto">
-              <div class="advantages__title advantages-title_blue">
-                <p class="advantages__title-header">Настоящий городок</p>
-                <p class="advantages__title-number">— №1 —</p>
-                <p class="advantages__title-remark">Седона не аттракцион для туристов, там течёт своя жизнь</p>
-              </div>
-              <figure class="advantages__item_img">
-                <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Дом">
-              </figure>
-                <ul class="benefits">
-                  <li class="benefits__item">
-                      <!--вставить svg фоновой картинкой-->
-                    <h3 class="benefits__title">Жилье</h3>
-                    <p class="benefits__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                  </li>
-                  <li class="benefits__item">
-                      <!--вставить svg фоновой картинкой-->
-                    <h3 class="benefits__title">Сувениры</h3>
-                    <p class="benefits__description">Не только китайского, но и местного производства!</p>
-                  </li>
-                  <li class="benefits__item">
-                      <!--вставить svg фоновой картинкой-->
-                    <h3 class="benefits__title">Еда</h3>
-                    <p class="benefits__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                  </li>
-                </ul>
-            </li>
-            <li class="advantages__item advantages__item_foto">
-              <div class="advantages__title advantages-title_blue">
-                <p class="advantages__title-header">Там есть мост дьявола</p>
-                <p class="advantages__title-number">— №2 —</p>
-                <p class="advantages__title-remark">Да, по нему можно пройтись если Вы осмелитесь, конечно</p>
-              </div>
-              <figure class="advantages__item_img">
-                <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Скалы">
-              </figure>
-            </li>
-            <li class="advantages__item advantages__item_rest">
-              <div class="advantages__title advantages-title_gray">
-                <p class="advantages__title-header title_black">Небольшая площадь</p>
-                <p class="advantages__title-number title_black">— №3 —</p>
-                <p class="advantages__title-remark title_black">Все интересные места находятся очень близко</p>
-              </div>
-            </li>
-            <li class="advantages__item advantages__item_rest">
-              <div class="advantages__title advantages-title_gray">
-                <p class="advantages__title-header title_black">Красивая дорога</p>
-                <p class="advantages__title-number title_black">— №4 —</p>
-                <p class="advantages__title-remark title_black">Ехать в Седону с Лас-Вегаса совсем не скучно!</p>
-              </div>
-            </li>
-            <li class="advantages__item advantages__item_rest">
-              <div class="advantages__title advantages-title_gray">
-                <p class="advantages__title-header title_black">Мало туристов</p>
-                <p class="advantages__title-number title_black">— №5 —</p>
-                <p class="advantages__title-remark title_black">Большинство едет в Гранд-Каньон и толпится там</p>
-              </div>
-            </li>
-          </ul>
-      </section>
+
+
+      <ul class="advantages__list">
+          <li class="advantages__item advantages__item_foto">
+            <div class="advantages__title advantages-title_blue">
+              <p class="advantages__title-header">Настоящий городок</p>
+              <p class="advantages__title-number">— №1 —</p>
+              <p class="advantages__title-remark">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <figure class="advantages__item_img">
+              <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Дом">
+            </figure>
+          </li>
+          <li class="advantages__item">
+              <ul class="benefits">
+                <li class="benefits__item">
+                  <!--Вставить svg-->
+                  <h3 class="benefits__title">Жилье</h3>
+                  <p class="benefits__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </li>
+                <li class="benefits__item">
+                  <!--Вставить svg-->
+                  <h3 class="benefits__title">Сувениры</h3>
+                  <p class="benefits__description">Не только китайского, но и местного производства!</p>
+                </li>
+                <li class="benefits__item">
+                  <!--Вставить svg-->
+                  <h3 class="benefits__title">Еда</h3>
+                  <p class="benefits__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </li>
+              </ul>
+          </li>
+          <li class="advantages__item advantages__item_foto">
+            <div class="advantages__title advantages-title_blue">
+              <p class="advantages__title-header">Там есть мост дьявола</p>
+              <p class="advantages__title-number">— №2 —</p>
+              <p class="advantages__title-remark">Да, по нему можно пройтись если Вы осмелитесь, конечно</p>
+            </div>
+            <figure class="advantages__item_img">
+              <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Скалы">
+            </figure>
+          </li>
+          <li class="advantages__item">
+            <ul class="rest rest-bg_gray">
+              <li class="rest__item">
+                <p class="rest__item-header title_black">Небольшая площадь</p>
+                <p class="rest__item-number title_black">— №3 —</p>
+                <p class="rest__item-remark title_black">Все интересные места находятся очень близко</p>
+              </li>
+              <li class="rest__item">
+                <p class="rest__item-header title_black">Красивая дорога</p>
+                <p class="rest__item-number title_black">— №4 —</p>
+                <p class="rest__item-remark title_black">Ехать в Седону с Лас-Вегаса совсем не скучно!</p>
+              </li>
+              <li class="rest__item">
+                <p class="rest__item-header title_black">Мало туристов</p>
+                <p class="rest__item-number title_black">— №5 —</p>
+                <p class="rest__item-remark title_black">Большинство едет в Гранд-Каньон и толпится там</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </section>
 
       <section class="interest">
         <h2 class="visually-hidden">Интерес</h2>
