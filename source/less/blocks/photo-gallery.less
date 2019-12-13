@@ -1,3 +1,7 @@
+.photo-gallery {
+  max-width: 320px;
+}
+
 .photo-gallery__list {
   list-style: none;
   text-align: center;
@@ -21,7 +25,17 @@
   color: @text-black;
 }
 
+.photo-gallery__img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: @tablet-width) {
+  .photo-gallery {
+    max-width: 768px;
+  }
+
   .photo-gallery__list {
     display: flex;
     flex-wrap: wrap;
@@ -29,6 +43,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .photo-gallery {
+    max-width: 1200px;
+  }
+
   .photo-gallery__list {
     display: flex;
     flex-wrap: wrap;

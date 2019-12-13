@@ -1,8 +1,28 @@
 .main-bg {
   text-align: center;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto, auto, cover;
-  height: 389px;
+  max-width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-bg {
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto, auto, cover;
+    max-width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-bg {
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto, auto, cover;
+    max-width: 1200px;
+  }
 }

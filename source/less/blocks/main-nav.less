@@ -1,3 +1,7 @@
+.main-nav {
+  max-width: 320px;
+}
+
 .main-nav__nav-item {
   background-color: @bg-main-color;
   color: @text-white;
@@ -30,6 +34,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .main-nav {
+    max-width: 768px;
+  }
+
   .main-nav__nav-list {
     display: flex;
     flex-direction: row;
@@ -50,6 +58,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav {
+    max-width: 1200px;
+  }
+
   .main-nav__nav-list {
     display: flex;
     flex-direction: row;
