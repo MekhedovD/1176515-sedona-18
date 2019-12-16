@@ -1,3 +1,7 @@
+.photo-gallery {
+  max-width: 320px;
+}
+
 .photo-gallery__list {
   list-style: none;
   text-align: center;
@@ -8,7 +12,7 @@
   font-size: 16px;
   font-weight: bold;
   line-height: 1.44;
-  color: @text_black;
+  color: @text-black;
   text-align: center;
   text-transform: uppercase;
 }
@@ -18,5 +22,33 @@
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
-  color: @text_black;
+  color: @text-black;
+}
+
+.photo-gallery__img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-gallery {
+    max-width: 768px;
+  }
+
+  .photo-gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-gallery {
+    max-width: 1200px;
+  }
+
+  .photo-gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
