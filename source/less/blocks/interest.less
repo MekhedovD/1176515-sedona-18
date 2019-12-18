@@ -1,3 +1,8 @@
+.interest {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .interest__title {
   display: flex;
   flex-direction: column;
@@ -28,4 +33,16 @@
 
 .interest__map {
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .interest {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .interest {
+    width: 1200px;
+  }
 }

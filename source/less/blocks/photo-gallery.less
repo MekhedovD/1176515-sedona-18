@@ -1,5 +1,6 @@
 .photo-gallery {
   max-width: 320px;
+  margin: 0 auto;
 }
 
 .photo-gallery__list {
@@ -36,15 +37,35 @@
     max-width: 768px;
   }
 
+  .photo-gallery__item {
+    width: 49%;
+    margin: 0;
+  }
+
   .photo-gallery__list {
     display: flex;
     flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .photo-gallery__img img {
+    width: 100%;
+  }
+
+  .photo-gallery__item:first-of-type {
+    width: 100%;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo-gallery {
     max-width: 1200px;
+  }
+
+  .photo-gallery__item {
+    width: 33%;
   }
 
   .photo-gallery__list {
