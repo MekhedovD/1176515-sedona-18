@@ -1,7 +1,13 @@
 .footer {
-  width: 320px;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
+  min-width: 320px;
   background-color: white;
+}
+
+.footer__social-list {
+  display: flex;
 }
 
 .footer__social-title {
@@ -12,14 +18,15 @@
   line-height: 1.24;
   text-align: center;
   color: @text-black;
-  padding-top: 37px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .footer {
     width: 768px;
     display: flex;
-    align-items: baseline;
     justify-content: space-around;
   }
 }
@@ -28,7 +35,6 @@
   .footer {
     width: 1200px;
     display: flex;
-    align-items: baseline;
     justify-content: space-around;
   }
 }

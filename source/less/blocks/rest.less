@@ -1,11 +1,20 @@
 .rest__item {
   list-style: none;
+  padding-top: 1.2em;
+  padding-bottom: 1.1em;
+  margin-top: -3px;
+  margin: auto;
+  width: 90%;
+  border-bottom: 1px solid black;
+}
+
+.rest__item:last-of-type {
+  border: none;
 }
 
 .rest-bg_gray {
   background-color: @bg_gray;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding: 0;
 }
 
 .rest__item-header {
@@ -15,7 +24,7 @@
   line-height: 1.24;
   text-transform: uppercase;
   text-align: center;
-  color: @text-white;
+  color: @text-black;
 }
 
 .rest__item-number,
@@ -25,7 +34,7 @@
   line-height: 1.5;
   text-transform: uppercase;
   text-align: center;
-  color: @text-white;
+  color: @text-black;
 }
 
 @media (min-width: @tablet-width) {
