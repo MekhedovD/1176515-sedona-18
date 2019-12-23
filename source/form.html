@@ -9,30 +9,34 @@
   <body>
 
     <header class="header">
-        <nav class="main-nav">
-          <button class="main-nav__button-closed"><img class="main-nav__img-closed" src="img/icon-cross.svg" alt="Закрыть Меню">
-          </button>
-          <ul class="main-nav__nav-list">
-            <li class="main-nav__nav-item main-nav__nav-item_active">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__nav-item">
-              <a class="main-nav__link" href="foto.html">Фото и видео</a>
-            </li>
-            <li class="main-nav__nav-item">
-              <a class="main-nav__link">Форма отзыва</a>
-            </li>
-            <li class="main-nav__nav-item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-          <button class="main-nav__button-open"><img class="main-nav__img-open" src="img/icon-menu.svg" alt="City of Sedona">
-          </button>
-          <a class="main-nav__header-logo">
-            <img src="img/logo-sedona-mobile.svg" alt="Logo">
-          </a>
-        </nav>
-    </header>
+      <nav class="main-nav">
+        <button class="main-nav__button-closed"><img class="main-nav__img-closed" src="img/icon-cross.svg" alt="Закрыть Меню">
+        </button>
+        <ul class="main-nav__nav-list">
+          <li class="main-nav__nav-item main-nav__nav-item_active">
+            <a class="main-nav__link" href="foto.html">Главная</a>
+          </li>
+          <li class="main-nav__nav-item">
+            <a class="main-nav__link" href="foto.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__nav-item main-nav__logo-tablet"><a class="main-nv__header-logo">
+            <img src="img/logo-sedona-tablet.svg" alt="Logo">
+            </a>
+        </li>
+          <li class="main-nav__nav-item">
+            <a class="main-nav__link">Форма отзыва</a>
+          </li>
+          <li class="main-nav__nav-item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+        <button class="main-nav__button-open"><img class="main-nav__img-open" src="img/icon-menu.svg" alt="City of Sedona">
+        </button>
+        <a class="main-nav__logo-mobile">
+          <img src="img/logo-sedona-mobile.svg" alt="Logo">
+        </a>
+      </nav>
+  </header>
 
     <main class="main">
       <h1 class="visually-hidden">Седона для туристов</h1>
@@ -63,10 +67,10 @@
 
             <fieldset class="feedback__email email">
               <legend class="email__contact">Контактная информация:</legend>
-              <label class="email__tel">Контактный телефон*:
+              <label class="email__tel email__tel__title"><span>Контактный телефон*:</span>
                 <input class="email__input-tel" type="tel" name="phone-number" placeholder="Введите телефон" required>
               </label>
-              <label class="email__box">Электронная почта*:
+              <label class="email__box email__box__title"><span>Электронная почта*:</span>
                 <input class="email__input-box" type="email" name="email" placeholder="Введите e-mail" required>
               </label>
             </fieldset>
@@ -104,7 +108,7 @@
               <h3 class="emotion__title">Опишите свои эмоции:</h3>
                 <textarea class="emotion__text" placeholder="Опишите подробно все свои восторги" cols="30" rows="10"></textarea>
             </div>
-            <a class="button feedback__bt">Отправить отзыв</a>
+            <a class="button feedback__bt">Отправить отзыв</a><span class="feedback-required">*-Обязательные поля</span>
 
           </form>
       </section>

@@ -19,6 +19,10 @@
           <li class="main-nav__nav-item">
             <a class="main-nav__link" href="foto.html">Фото и видео</a>
           </li>
+          <li class="main-nav__nav-item main-nav__logo-tablet"><a class="main-nv__header-logo">
+            <img src="img/logo-sedona-tablet.svg" alt="Logo">
+            </a>
+        </li>
           <li class="main-nav__nav-item">
             <a class="main-nav__link" href="form.html">Форма отзыва</a>
           </li>
@@ -28,7 +32,7 @@
         </ul>
         <button class="main-nav__button-open"><img class="main-nav__img-open" src="img/icon-menu.svg" alt="City of Sedona">
         </button>
-        <a class="main-nav__header-logo">
+        <a class="main-nav__logo-mobile">
           <img src="img/logo-sedona-mobile.svg" alt="Logo">
         </a>
       </nav>
@@ -49,14 +53,18 @@
 
       <ul class="advantages__list">
           <li class="advantages__item advantages__item_foto">
-            <div class="advantages__title advantages-title_blue">
+            <div class="advantages__title advantages-title_blue advantages-bg">
               <p class="advantages__title-header">Настоящий городок</p>
               <p class="advantages__title-number">— №1 —</p>
               <p class="advantages__title-remark">Седона не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <figure class="advantages__item_img">
-              <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Дом">
-            </figure>
+
+            <picture class="advantages__item_img">
+              <source media="(min-width: 1200px)" srcset=" img/main-city-desktop@1x.jpg 1x">
+              <source media="(min-width: 768px)" srcset=" img/main-city-tablet@1x.jpg 1x">
+              <img src="img/main-city-mobile@1x.jpg" alt="Дом">
+            </picture>
+
           </li>
           <li class="advantages__item">
               <ul class="benefits">
@@ -78,33 +86,38 @@
               </ul>
           </li>
           <li class="advantages__item advantages__item_foto">
-            <div class="advantages__title advantages-title_blue">
+            <div class="advantages__title advantages-title_blue-2">
               <p class="advantages__title-header">Там есть мост дьявола</p>
               <p class="advantages__title-number">— №2 —</p>
               <p class="advantages__title-remark">Да, по нему можно пройтись если Вы осмелитесь, конечно</p>
             </div>
-            <figure class="advantages__item_img">
-              <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Скалы">
-            </figure>
+            <picture class="advantages__item_img">
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x">
+              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x">
+              <img src="img/main-bridge-mobile@1x.jpg" alt="Скалы">
+            </picture>
+
           </li>
           <li class="advantages__item">
-            <ul class="rest rest-bg_gray">
-              <li class="rest__item">
-                <p class="rest__item-header">Небольшая площадь</p>
-                <p class="rest__item-number">— №3 —</p>
-                <p class="rest__item-remark">Все интересные места находятся очень близко</p>
-              </li>
-              <li class="rest__item">
-                <p class="rest__item-header">Красивая дорога</p>
-                <p class="rest__item-number">— №4 —</p>
-                <p class="rest__item-remark">Ехать в Седону с Лас-Вегаса совсем не скучно!</p>
-              </li>
-              <li class="rest__item">
-                <p class="rest__item-header">Мало туристов</p>
-                <p class="rest__item-number">— №5 —</p>
-                <p class="rest__item-remark">Большинство едет в Гранд-Каньон и толпится там</p>
-              </li>
-            </ul>
+
+              <ul class="rest rest-bg_gray">
+                <li class="rest__item">
+                  <p class="rest__item-header">Небольшая площадь</p>
+                  <p class="rest__item-number">— №3 —</p>
+                  <p class="rest__item-remark">Все интересные места находятся очень близко</p>
+                </li>
+                <li class="rest__item">
+                  <p class="rest__item-header">Красивая дорога</p>
+                  <p class="rest__item-number">— №4 —</p>
+                  <p class="rest__item-remark">Ехать в Седону с Лас-Вегаса совсем не скучно!</p>
+                </li>
+                <li class="rest__item">
+                  <p class="rest__item-header">Мало туристов</p>
+                  <p class="rest__item-number">— №5 —</p>
+                  <p class="rest__item-remark">Большинство едет в Гранд-Каньон и толпится там</p>
+                </li>
+              </ul>
+           
           </li>
         </ul>
     </section>

@@ -1,4 +1,17 @@
-.advantages-title_blue {
+.advantages-title_blue,
+.advantages-title_blue-2 {
   background-color: @bg-advantages-title_blue;
+  // height: 200px;
   width: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages-title_blue {
+    width: 33%;
+  }
+
+  .advantages-title_blue-2 {
+    width: 33%;
+    order: 1;
+  }
 }

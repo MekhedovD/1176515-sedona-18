@@ -1,7 +1,6 @@
 .like {
   text-align: left;
   margin-left: 7.5%;
-  margin-bottom:  7.5%;
 }
 
 .like__value {
@@ -10,4 +9,12 @@
   font-weight: bold;
   letter-spacing: 1.2px;
   color: @text-black;
+}
+
+@media (min-width: @tablet-width) {
+  .like {
+    position: absolute;
+    top:40%;
+    left: 75%;
+  }
 }

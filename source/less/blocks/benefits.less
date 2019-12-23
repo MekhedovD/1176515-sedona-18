@@ -3,8 +3,8 @@
   padding: 0;
   width: 68%;
   margin: auto;
-  margin-top: 1.2em;
-  margin-bottom: 1.2em;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 
 .benefits__title {
@@ -15,7 +15,7 @@
   text-transform: uppercase;
   text-align: left;
   color: @text-black;
-  padding-bottom: 1.2em;
+  padding-bottom: 6%;
   margin: 0;
 }
 
@@ -26,13 +26,28 @@
   text-transform: uppercase;
   text-align: left;
   color: @text-black;
-  padding-bottom: 1em;
+  padding-bottom: 6%;
   margin: 0;
+}
+
+.benefits__item {
+  width: 85%;
 }
 
 @media (min-width: @tablet-width) {
   .benefits {
     display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .benefits__item {
+    width: 30%;
+  }
+
+  .benefits__description,
+  .benefits__title {
+    text-align: center;
   }
 }
 

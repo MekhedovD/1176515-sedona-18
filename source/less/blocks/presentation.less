@@ -1,5 +1,7 @@
 .presentation{
   margin-bottom: 30px;
+  width: 85%;
+  background-color: aqua;
 }
 
 .presentation__title {
@@ -10,7 +12,8 @@
   text-transform: uppercase;
   text-align: center;
   color: @text-black;
-  padding-bottom: 20px;
+  padding-bottom: 7%;
+  padding-top: 7%;
 }
 
 .presentation__name,
@@ -21,7 +24,9 @@
   font-size: 14px;
   text-transform: uppercase;
   color: @text-black;
-  padding-bottom: 23px;
+  padding-bottom: 7%;
+  display: flex;
+  width: auto;
 }
 
 .presentation input[type="text"] {
@@ -30,4 +35,18 @@
   line-height: 1.85;
   font-size: 14px;
   color: @text-black;
+  width: 100%;
+  border: none;
+  background-color: #f5f5f5;
+}
+
+@media (min-width: @tablet-width) {
+  .presentation {
+    width: 45%;
+  }
+
+  .presentation__title {
+    padding-top: 0;
+    text-align: left;
+  }
 }
