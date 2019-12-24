@@ -3,9 +3,8 @@
   padding-top: 3%;
   padding-bottom: 3%;
   margin-top: -3px;
-  margin: auto;
   width: 90%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #d6d6d6;
 }
 
 .rest__item:last-of-type {
@@ -15,6 +14,7 @@
 .rest-bg_gray {
   background-color: @bg_gray;
   padding: 0;
+  margin-top: -3px;
 }
 
 .rest__item-header {
@@ -40,15 +40,39 @@
 @media (min-width: @tablet-width) {
   .rest {
     display: flex;
+    justify-content: space-around;
   }
 
   .rest__item {
+    width: 127px;
     border: none;
+  }
+
+  .rest__item-header {
+    font-size: 20px;
+  }
+
+  .rest__item-number,
+  .rest__item-remark {
+    font-size: 16px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .rest {
     display: flex;
+  }
+
+  .rest__item {
+    width: 29%;
+  }
+
+  .rest__item-header {
+    font-size: 22px;
+  }
+
+  .rest__item-number,
+  .rest__item-remark {
+    font-size: 18px;
   }
 }

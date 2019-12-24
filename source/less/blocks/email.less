@@ -42,6 +42,10 @@
   width: 100%;
 }
 
+.email input::placeholder {
+  padding-left: 1%;
+}
+
 .email__input-tel,
 .email__input-box {
   margin-top: 10px;
@@ -49,9 +53,38 @@
 }
 
 @media (min-width: @tablet-width) {
+  .email {
+    width: 100%;
+  }
+
   .email__tel,
   .email__box {
     display: flex;
     flex-direction: column;
+  }
+
+  .email__contact {
+    text-align: center;
+    font-size: 19px;
+  }
+
+  .email__tel__title,
+  .email__box__title,
+  .email input[type="tel"],
+  .email input[type="email"] {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .email__contact {
+    font-size: 21px;
+  }
+
+  .email__tel__title,
+  .email__box__title,
+  .email input[type="tel"],
+  .email input[type="email"] {
+    font-size: 18px;
   }
 }

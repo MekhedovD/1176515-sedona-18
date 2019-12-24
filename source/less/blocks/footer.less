@@ -23,18 +23,25 @@
   margin: 0;
 }
 
+.footer__copyright {
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
 @media (min-width: @tablet-width) {
   .footer {
-    width: 768px;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+  }
+
+  .footer__social-title {
+    font-size: 23px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .footer {
-    width: 1200px;
-    display: flex;
-    justify-content: space-around;
+  .footer__social-title {
+    font-size: 25px;
   }
 }

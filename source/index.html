@@ -117,21 +117,23 @@
                   <p class="rest__item-remark">Большинство едет в Гранд-Каньон и толпится там</p>
                 </li>
               </ul>
-           
+
           </li>
         </ul>
     </section>
 
       <section class="interest">
         <h2 class="visually-hidden">Интерес</h2>
-        <div class="interest__wr interest__title">
+        <div class="interest__title">
           <h3 class="interest__title-header">Заинтересовались?</h3>
           <p class="interest__title-remark">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a href="" class="button interest__bt">Найти гостиницу</a>
         </div>
-        <div class="interest__map">
-          <img src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта Аризоны">
-        </div>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x">
+          <img class="interest__map" src="img/bg-map-mobile@1x.jpg" alt="Карта Аризоны">
+        </picture>
       </section>
 
     </main>

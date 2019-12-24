@@ -29,3 +29,27 @@
   background-color: #f5f5f5;
   border: none;
 }
+
+@media (min-width: @tablet-width) {
+  .emotion {
+    width: 100%;
+  }
+
+  .emotion__title {
+    font-size: 19px;
+  }
+
+  .emotion textarea::placeholder {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .emotion__title {
+    font-size: 21px;
+  }
+
+  .emotion textarea::placeholder {
+    font-size: 18px;
+  }
+}
