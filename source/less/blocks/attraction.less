@@ -4,6 +4,11 @@
   background-color: aquamarine;
 }
 
+.attraction__list {
+  display: flex;
+  flex-direction: column;
+}
+
 .attraction__title {
   font-family: @font-base;
   font-size: 17px;
@@ -15,10 +20,7 @@
   color: @text-black;
 }
 
-.attraction__bridge,
-.attraction__mount,
-.attraction__park,
-.attraction__rocks {
+.attraction__label {
   font-family: @font-base;
   font-weight: bold;
   line-height: 1.85;
@@ -28,16 +30,63 @@
   color: @text-black;
 }
 
+.attraction__label input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
+}
+
+.attraction__checkbox-text {
+  position: relative;
+  padding: 0 0 0 60px;
+  cursor: pointer;
+}
+
+.attraction__checkbox-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: @bg-input;
+}
+
+.attraction__checkbox-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 7px;
+  border-radius: 1px;
+  border-left: 4px solid #000000;
+  border-bottom: 4px solid #000000;
+  transform: rotate(-45deg);
+}
+
+.attraction__label input:checked + .attraction__checkbox-text::before {
+  opacity: 1;
+}
+
+.attraction__label input:checked + .attraction__checkbox-text::after {
+  opacity: 0;
+}
+
 @media (min-width: @tablet-width) {
   .attraction__title {
     font-size: 19px;
   }
 
-  .attraction__bridge,
-  .attraction__mount,
-  .attraction__park,
-  .attraction__rocks {
+  .attraction__label {
     font-size: 16px;
+  }
+
+  .attraction__checkbox-text::before {
+    content: "";
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -55,10 +104,13 @@
     font-size: 21px;
   }
 
-  .attraction__bridge,
-  .attraction__mount,
-  .attraction__park,
-  .attraction__rocks {
+  .attraction__label {
     font-size: 18px;
+  }
+
+  .attraction__checkbox-text::before {
+    content: "";
+    width: 30px;
+    height: 30px;
   }
 }

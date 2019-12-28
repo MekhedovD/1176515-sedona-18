@@ -77,31 +77,38 @@
 
             <fieldset class="feedback__impressions impression">
               <legend class="impression__title">Ваше общее впечатление:</legend>
-              <label class="impression__label_positive">
-                <input class="impression__radio_positive" type="radio" name="impressions" checked>Скорее положительное
+              <label class="impression__label">
+                <input type="radio" name="impressions" checked>
+                <span class="impression__text">Скорее положительное</span>
               </label>
-              <label class="impression__label_negative">
-                <input class="impression__radio_negative" type="radio" name="impressions">Скорее отрицательное
+              <label class="impression__label">
+                <input type="radio" name="impressions">
+                <span class="impression__text">Скорее отрицательное</span>
               </label>
-              <label class="impression__label_difficult">
-                <input class="impression__radio_difficult" type="radio" name="impressions">Затрудняюсь ответить
+              <label class="impression__label">
+                <input type="radio" name="impressions">
+                <span class="impression__text">Затрудняюсь ответить</span>
               </label>
             </fieldset>
 
             <fieldset class="feedback__attractions attraction">
               <legend class="attraction__title">Посещенные достопримечательности:</legend>
               <div class="attraction__list">
-                <label class="attraction__bridge">
-                  <input class="attraction__checkbox-bridge" type="checkbox" name="bridge" checked>Мост Дьявола
+                <label class="attraction__label">
+                  <input type="checkbox" name="bridge" checked>
+                  <span class="attraction__checkbox-text">Мост Дьявола</span>
                 </label>
-                <label class="attraction__mount">
-                  <input class="attraction__checkbox-mount" type="checkbox" name="mount" checked>Гора-Колокол
+                <label class="attraction__label">
+                  <input type="checkbox" name="mount">
+                  <span class="attraction__checkbox-text">Гора-Колокол</span>
                 </label>
-                <label class="attraction__park">
-                  <input class="attraction__checkbox-park" type="checkbox" name="park" checked>Слайд-Парк
+                <label class="attraction__label">
+                  <input type="checkbox" name="park">
+                  <span class="attraction__checkbox-text">Слайд-Парк</span>
                 </label>
-                <label class="attraction__rocks">
-                  <input class="attraction__checkbox-rocks" type="checkbox" name="rocks" checked>Красные скалы
+                <label class="attraction__label">
+                  <input type="checkbox" name="rocks">
+                  <span class="attraction__checkbox-text">Красные скалы</span>
                 </label>
               </div>
             </fieldset>

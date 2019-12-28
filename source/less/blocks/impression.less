@@ -15,9 +15,7 @@
   color: @text-black;
 }
 
-.impression__label_positive,
-.impression__label_negative,
-.impression__label_difficult {
+.impression__label {
   font-family: @font-base;
   font-weight: bold;
   line-height: 1.85;
@@ -25,6 +23,50 @@
   text-align: left;
   padding-bottom: 10px;
   color: @text-black;
+}
+
+.impression__label input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+}
+
+.impression__text {
+  position: relative;
+  padding: 0 0 0 35px;
+  cursor: pointer;
+}
+
+.impression__text::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: @bg-input;
+}
+
+.impression__text::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000000;
+  transition: 0.2s;
+}
+
+.impression__label input:checked + .impression__text::after {
+  opacity: 1;
+}
+
+.impression__label input:not(:checked) + .impression__text::after {
+  opacity: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -38,10 +80,20 @@
     font-size: 19px;
   }
 
-  .impression__label_positive,
-  .impression__label_negative,
-  .impression__label_difficult {
+  .impression__label {
     font-size: 16px;
+  }
+
+  .impression__text::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+  }
+
+  .impression__text::after {
+    content: "";
+    width: 13px;
+    height: 13px;
   }
 }
 
@@ -50,9 +102,21 @@
     font-size: 21px;
   }
 
-  .impression__label_positive,
-  .impression__label_negative,
-  .impression__label_difficult {
+  .impression__label {
     font-size: 18px;
+  }
+
+  .impression__text::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+  }
+
+  .impression__text::after {
+    content: "";
+    top: 4px;
+    left: 7px;
+    width: 16px;
+    height: 16px;
   }
 }
