@@ -41,24 +41,35 @@
   .benefits {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 88%;
+    padding: 0;
   }
 
   .benefits__item {
-    width: 30%;
+    width: 24%;
+    padding-top: 20%;
+    padding-bottom: 8%;
+  }
+
+  .benefits__item:nth-child(2) {
+    order: 1;
   }
 
   .benefits__description,
   .benefits__title {
     text-align: center;
+    letter-spacing: -1px;
+    line-height: 1.5;
   }
 
   .benefits__title {
-    font-size: 20px;
+    font-size: 19px;
+    padding-top: 14%;
   }
 
   .benefits__description {
-    font-size: 16px;
+    font-size: 14px;
+    padding-top: 10%;
   }
 }
 

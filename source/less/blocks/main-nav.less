@@ -6,13 +6,14 @@
 }
 
 .main-nav__nav-item {
-  // background-color: lawngreen;
   background-color: @bg-main-color;
   color: @text-white;
 }
+
 .main-nav__nav-item:nth-child(n+2) {
   border-top: 1px solid #9ac2db;
 }
+
 .main-nav__nav-item:nth-child(-n+4) {
   border-bottom: 1px solid #678fa8;
 }
@@ -83,22 +84,33 @@
 
 @media (min-width: @tablet-width) {
   .main-nav {
-    width: auto;
+    // width: auto;
   }
 
   .main-nav__nav-list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 50px;
+    height: 56px;
   }
 
   .main-nav__nav-item {
     background-color: white;
+    width: 153px;
+    border: none;
+  }
+
+  .main-nav__nav-item:nth-child(n+2) {
+    border-top: none;
+  }
+
+  .main-nav__nav-item:nth-child(-n+4) {
+    border-bottom: none;
   }
 
   .main-nav__link {
-    font-size: 18px;
+    font-size: 15px;
+    letter-spacing: -1px;
     color: @text-black;
   }
 

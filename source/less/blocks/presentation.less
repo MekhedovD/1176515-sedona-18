@@ -36,18 +36,46 @@
   width: auto;
 }
 
-.presentation input[type="text"] {
+.presentation__input-name  {
   font-family: @font-base;
   font-weight: bold;
   line-height: 1.85;
   font-size: 16px;
   color: @text-black;
-  width: 100%;
+  width: 72%;
+  // width: 208px;
   border: none;
   background-color: @bg-input;
   padding-left: 8%;
-  margin-left: 5%;
+  margin-left: 6%;
 }
+
+.presentation__input-surname,
+.presentation__input-patronymic {
+  font-family: @font-base;
+  font-weight: bold;
+  line-height: 1.85;
+  font-size: 16px;
+  color: @text-black;
+  width: 59%;
+  // width: 171px;
+  border: none;
+  background-color: @bg-input;
+  padding-left: 8%;
+  margin-left: 7%;
+}
+// .presentation input[type="text"] {
+//   font-family: @font-base;
+//   font-weight: bold;
+//   line-height: 1.85;
+//   font-size: 16px;
+//   color: @text-black;
+//   width: 73%;
+//   border: none;
+//   background-color: @bg-input;
+//   padding-left: 8%;
+//   margin-left: 5%;
+// }
 
 @media (min-width: @tablet-width) {
   .presentation {
