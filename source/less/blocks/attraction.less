@@ -1,7 +1,7 @@
 .attraction {
-  margin-bottom: 30px;
-  width: 85%;
-  background-color: aquamarine;
+  margin-bottom: 38px;
+  width: 90%;
+  // background-color: aquamarine;
 }
 
 .attraction__list {
@@ -16,15 +16,17 @@
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: -1px;
   padding-bottom: 3%;
+  padding-top: 7%;
   color: @text-black;
 }
 
 .attraction__label {
   font-family: @font-base;
   font-weight: bold;
-  line-height: 1.85;
-  font-size: 14px;
+  line-height: 4.4;
+  font-size: 17px;
   text-align: left;
   padding-bottom: 2%;
   color: @text-black;
@@ -39,28 +41,29 @@
 
 .attraction__checkbox-text {
   position: relative;
-  padding: 0 0 0 60px;
+  padding: 0 0 0 81px;
   cursor: pointer;
 }
 
 .attraction__checkbox-text::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 20px;
-  height: 20px;
+  left: 3px;
+  top: -17px;
+  width: 55px;
+  height: 55px;
+  border-radius: 6px;
   background-color: @bg-input;
 }
 
 .attraction__checkbox-text::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 22px;
   top: 0;
-  width: 16px;
-  height: 7px;
-  border-radius: 1px;
+  width: 17px;
+  height: 9px;
+  // border-radius: 1px;
   border-left: 4px solid #000000;
   border-bottom: 4px solid #000000;
   transform: rotate(-45deg);

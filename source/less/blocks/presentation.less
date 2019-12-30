@@ -1,7 +1,13 @@
 .presentation {
   margin-bottom: 30px;
-  width: 85%;
-  background-color: aqua;
+  width: 90%;
+  // background-color: aqua;
+}
+
+.presentation__wr {
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+  margin-bottom: -8%;
 }
 
 .presentation__title {
@@ -20,9 +26,10 @@
 .presentation__surname,
 .presentation__patronymic {
   font-family: @font-base;
-  line-height: 1.85;
+  line-height: 4.2;
   font-size: 14px;
   text-transform: uppercase;
+  letter-spacing: -1px;
   color: @text-black;
   padding-bottom: 7%;
   display: flex;
@@ -33,12 +40,13 @@
   font-family: @font-base;
   font-weight: bold;
   line-height: 1.85;
-  font-size: 14px;
+  font-size: 16px;
   color: @text-black;
   width: 100%;
   border: none;
   background-color: @bg-input;
-  padding-left: 2%;
+  padding-left: 8%;
+  margin-left: 5%;
 }
 
 @media (min-width: @tablet-width) {

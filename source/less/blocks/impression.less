@@ -1,7 +1,7 @@
 .impression {
-  margin-bottom: 30px;
-  width: 85%;
-  background-color: aquamarine;
+  margin-bottom: 45px;
+  width: 90%;
+  // background-color: aquamarine;
 }
 
 .impression__title {
@@ -11,16 +11,19 @@
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 20px;
+  letter-spacing: -1px;
+  padding-bottom: 24px;
+  padding-top: 7%;
   color: @text-black;
 }
 
 .impression__label {
   font-family: @font-base;
   font-weight: bold;
-  line-height: 1.85;
-  font-size: 14px;
+  line-height: 3.4;
+  font-size: 17px;
   text-align: left;
+  letter-spacing: -1px;
   padding-bottom: 10px;
   color: @text-black;
 }
@@ -34,28 +37,29 @@
 
 .impression__text {
   position: relative;
-  padding: 0 0 0 35px;
+  padding: 0 0 0 83px;
   cursor: pointer;
 }
 
 .impression__text::before {
   content: "";
   position: absolute;
-  top: -3px;
-  left: 0;
-  width: 22px;
-  height: 22px;
+  top: -18px;
+  left: 3px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   background: @bg-input;
+  // background-color: blue;
 }
 
 .impression__text::after {
   content: "";
   position: absolute;
-  top: 3px;
-  left: 6px;
-  width: 10px;
-  height: 10px;
+  top: -2px;
+  left: 19px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   background-color: #000000;
   transition: 0.2s;
