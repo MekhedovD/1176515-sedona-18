@@ -7,7 +7,7 @@
   width: 100%;
 }
 
-.video-gallery-header {
+.video-gallery__header {
   font-family: @font-base;
   font-size: 17px;
   line-height: 1.5;
@@ -21,7 +21,7 @@
   width: 80%;
 }
 
-.video-gallery-remark {
+.video-gallery__remark {
   font-family: @font-base;
   line-height: 1.85;
   font-size: 13px;
@@ -38,7 +38,25 @@
 }
 
 @media (min-width: @tablet-width) {
-  // width: 768px;
+  .video-gallery {
+    padding: 0;
+  }
+
+  .video-gallery__header {
+    font-size: 28px;
+    padding-top: 7%;
+    padding-bottom: 3%;
+  }
+
+  .video-gallery__remark {
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    width: 60%;
+  }
+
+  .video-gallery__screen {
+    width: 84%;
+  }
 }
 
 @media (min-width: @desktop-width) {
