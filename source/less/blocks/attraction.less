@@ -1,7 +1,6 @@
 .attraction {
   margin-bottom: 38px;
   width: 90%;
-  // background-color: aquamarine;
 }
 
 .attraction__list {
@@ -63,7 +62,6 @@
   top: 0;
   width: 17px;
   height: 9px;
-  // border-radius: 1px;
   border-left: 4px solid #000000;
   border-bottom: 4px solid #000000;
   transform: rotate(-45deg);
@@ -78,42 +76,67 @@
 }
 
 @media (min-width: @tablet-width) {
+  .attraction {
+    margin-bottom: 72px;
+  }
+
   .attraction__title {
     font-size: 19px;
+    width: 60%;
+    padding-top: 5%;
+    padding-bottom: 6%;
   }
 
   .attraction__label {
     font-size: 16px;
+    width: 50%;
+    padding-bottom: 4%;
   }
 
   .attraction__checkbox-text::before {
     content: "";
-    width: 25px;
-    height: 25px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .attraction__checkbox-text::after {
+    content: "";
+    width: 17px;
+    height: 9px;
+  }
+
+  .attraction__list {
+    width: 89%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 10%;
   }
 }
 
 @media (min-width: @desktop-width) {
   .attraction {
     width: 100%;
+    margin-bottom: 78px;
   }
 
   .attraction__list {
     display: flex;
     justify-content: space-around;
+    flex-wrap: nowrap;
+    padding-left: 0;
+    width: 100%;
   }
 
   .attraction__title {
-    font-size: 21px;
+    font-size: 19px;
+    width: 40%;
+    padding-top: 7%;
+    padding-bottom: 3.5%;
   }
 
   .attraction__label {
-    font-size: 18px;
-  }
-
-  .attraction__checkbox-text::before {
-    content: "";
-    width: 30px;
-    height: 30px;
+    font-size: 16px;
+    width: 20%;
   }
 }

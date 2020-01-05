@@ -1,6 +1,7 @@
 .video-gallery {
   min-width: 320px;
   padding-bottom: 14%;
+  text-align: center;
 }
 
 .video-gallery__screen {
@@ -34,12 +35,72 @@
 }
 
 .video-gallery__clip {
-  text-align: center;
+  position: relative;
+}
+
+.video-gallery button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.video-gallery__slider {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 59px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.video-gallery__progress-bar {
+  width: 88%;
+  position: absolute;
+  left: 20px;
+  bottom: -60px;
+}
+
+.video-gallery__replay,
+.video-gallery__subtitle,
+.video-gallery__fullscreen {
+  background-color: transparent;
+}
+
+.video-gallery__replay {
+  position: absolute;
+  top: 68px;
+  left: 25px;
+}
+
+.video-gallery__subtitle {
+  position: absolute;
+  top: 68px;
+  right: 76px;
+}
+
+.video-gallery__fullscreen {
+  position: absolute;
+  top: 68px;
+  right: 25px;
+}
+
+.video-gallery__bg-black {
+  background-color: #00000060;
+  height: 45px;
+}
+
+.video-gallery__bg-gray {
+  background-color: #f2f2f2;
+  height: 65px;
 }
 
 @media (min-width: @tablet-width) {
   .video-gallery {
-    padding: 0;
+    padding-bottom: 37px;
   }
 
   .video-gallery__header {
@@ -51,14 +112,69 @@
   .video-gallery__remark {
     letter-spacing: 0.5px;
     font-size: 12px;
-    width: 60%;
+    width: 59%;
   }
 
   .video-gallery__screen {
     width: 84%;
   }
+
+  .video-gallery__progress-bar {
+    width: 84%;
+    left: 62px;
+  }
+
+  .video-gallery__bg-black {
+    height: 92px;
+  }
+
+  .video-gallery__bg-gray {
+    background-color: transparent;
+  }
+
+  .video-gallery__replay {
+    top: 35px;
+    left: 33px;
+  }
+
+  .video-gallery__subtitle {
+    top: 35px;
+    right: 91px;
+  }
+
+  .video-gallery__fullscreen {
+    top: 35px;
+    right: 40px;
+  }
+
+  .video-gallery__slider {
+    top: 41px;
+    left: 204px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  // width: 1200px;
+  .video-gallery__header {
+    padding-bottom: 2%;
+    padding-top: 5%;
+    letter-spacing: -2px;
+  }
+
+  .video-gallery__remark {
+    width: 37%;
+    padding-bottom: 6%;
+  }
+
+  .video-gallery__screen {
+    width: 67%;
+  }
+
+  .video-gallery__progress-bar {
+    width: 67%;
+    left: 198px;
+  }
+
+  .video-gallery {
+    padding-bottom: 55px;
+  }
 }

@@ -20,9 +20,11 @@
             <a class="main-nav__link" href="foto.html">Фото и видео</a>
           </li>
           <li class="main-nav__nav-item main-nav__logo-tablet"><a class="main-nv__header-logo">
-            <img src="img/logo-sedona-tablet.svg" alt="Logo">
-            </a>
-        </li>
+            <img src="img/logo-sedona-tablet.svg" alt="Logo"></a>
+          </li>
+          <li class="main-nav__nav-item main-nav__logo-desktop"><a class="main-nv__header-logo">
+            <img src="img/logo-sedona-desktop.svg" alt="Logo"></a>
+          </li>
           <li class="main-nav__nav-item">
             <a class="main-nav__link">Форма отзыва</a>
           </li>
@@ -68,12 +70,14 @@
             <div class="feedback__wr">
               <fieldset class="feedback__email email">
                 <legend class="email__contact">Контактная информация:</legend>
-                <label class="email__tel email__tel__title"><span>Контактный телефон*:</span>
-                  <input class="email__input-tel" type="tel" name="phone-number" placeholder="Введите телефон" required>
-                </label>
-                <label class="email__box email__box__title"><span>Электронная почта*:</span>
-                  <input class="email__input-box" type="email" name="email" placeholder="Введите e-mail" required>
-                </label>
+                <div class="email__list">
+                  <label class="email__tel email__tel__title"><span><span class="email__title-hidden">Контактный</span> телефон*:</span>
+                    <input class="email__input-tel" type="tel" name="phone-number" placeholder="Введите телефон" required>
+                  </label>
+                  <label class="email__box email__box__title"><span>Электронная почта*:</span>
+                    <input class="email__input-box" type="email" name="email" placeholder="Введите e-mail" required>
+                  </label>
+                </div>
               </fieldset>
             </div>
             <div class="feedback__wr">
@@ -121,8 +125,8 @@
                 <h3 class="emotion__title">Опишите свои эмоции:</h3>
                 <textarea class="emotion__text" placeholder="Опишите подробно все свои восторги" cols="30" rows="10"></textarea>
                 <a class="button feedback__bt">Отправить отзыв</a>
-              </div>
-              <span class="feedback-required">*-Обязательные поля</span>
+              <!-- </div> -->
+              <span class="feedback-required">*-Обязательные поля</span></div>
             </div>
           </form>
       </section>

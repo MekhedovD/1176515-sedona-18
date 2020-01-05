@@ -1,7 +1,6 @@
 .impression {
   margin-bottom: 45px;
   width: 90%;
-  // background-color: aquamarine;
 }
 
 .impression__title {
@@ -50,7 +49,6 @@
   height: 55px;
   border-radius: 50%;
   background: @bg-input;
-  // background-color: blue;
 }
 
 .impression__text::after {
@@ -75,52 +73,53 @@
 
 @media (min-width: @tablet-width) {
   .impression {
-    width: 45%;
+    width: 80%;
     margin-left: 0;
   }
 
   .impression__title {
     text-align: left;
     font-size: 19px;
+    padding-bottom: 53px;
+  }
+
+  .impression__text {
+    padding-left: 76px;
   }
 
   .impression__label {
-    font-size: 16px;
+    font-size: 17px;
+    line-height: 4;
   }
 
   .impression__text::before {
     content: "";
-    width: 26px;
-    height: 26px;
+    width: 55px;
+    height: 55px;
   }
 
   .impression__text::after {
     content: "";
-    width: 13px;
-    height: 13px;
+    width: 22px;
+    height: 22px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .impression {
+    width: 100%;
+    margin: 0;
+  }
+
   .impression__title {
-    font-size: 21px;
+    font-size: 19px;
+    padding-top: 6.5%;
+    margin-left: 21%;
   }
 
   .impression__label {
     font-size: 18px;
-  }
-
-  .impression__text::before {
-    content: "";
-    width: 30px;
-    height: 30px;
-  }
-
-  .impression__text::after {
-    content: "";
-    top: 4px;
-    left: 7px;
-    width: 16px;
-    height: 16px;
+    line-height: 3.8;
+    margin-left: 5.5%;
   }
 }

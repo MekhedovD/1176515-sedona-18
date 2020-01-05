@@ -20,8 +20,10 @@
             <a class="main-nav__link">Фото и видео</a>
           </li>
           <li class="main-nav__nav-item main-nav__logo-tablet"><a class="main-nv__header-logo">
-            <img src="img/logo-sedona-tablet.svg" alt="Logo">
-            </a>
+            <img src="img/logo-sedona-tablet.svg" alt="Logo"></a>
+          <li class="main-nav__nav-item main-nav__logo-desktop"><a class="main-nv__header-logo">
+            <img src="img/logo-sedona-desktop.svg" alt="Logo"></a>
+          </li>
         </li>
           <li class="main-nav__nav-item">
             <a class="main-nav__link" href="form.html">Форма отзыва</a>
@@ -128,11 +130,15 @@
               <img class="video-gallery__screen" src="img/video-mobile@1x.jpg" alt="Like video">
           </picture>
           <div class="video-gallery__progress-bar">
-            <button class="video-gallery__slider">Ползунок</button>
+            <div class="video-gallery__bg-black">
+              <button class="video-gallery__slider"><span class="visually-hidden">Ползунок</span></button>
+            </div>
+            <div class="video-gallery__bg-gray">
+              <button class="video-gallery__replay"><img src="img/icon-video-replay.svg" alt="Воспроизвести заново"></button>
+              <button class="video-gallery__subtitle"><img src="img/icon-video-subtitles.svg" alt="Субтитры"></button>
+              <button class="video-gallery__fullscreen"><img src="img/icon-video-fullscreen.svg" alt="На весь экран"></button>
+            </div>
           </div>
-          <button class="video-gallery__replay">Воспроизвести заново</button>
-          <button class="video-gallery__subtitle">Субтитры</button>
-          <button class="video-gallery__fullscreen">На весь экран</button>
         </div>
       </section>
 
