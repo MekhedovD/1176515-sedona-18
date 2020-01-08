@@ -8,15 +8,43 @@
   width: 50%;
 }
 
+.social__item {
+  display: block;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background-color: @bg-main-color;
+}
+
+.social__link_tw {
+  position: absolute;
+  top: 15px;
+  left: 14px;
+}
+
+.social__link_fb {
+  position: absolute;
+  top: 13px;
+  left: 18px;
+}
+
+.social__link_yt {
+  position: absolute;
+  top: 15px;
+  left: 13px;
+}
+
 @media (min-width: @tablet-width) {
   .social {
     margin: 0;
     width: 21%;
+    // padding-right: 2%;
   }
 }
 
 @media (min-width: @desktop-width) {
   .social {
-    width: 14%;
+    width: 13%;
+    padding-right: 2%;
   }
 }

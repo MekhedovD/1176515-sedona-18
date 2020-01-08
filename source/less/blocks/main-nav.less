@@ -8,13 +8,21 @@
 .main-nav__nav-item {
   background-color: @bg-main-color;
   color: @text-white;
+
+  &:hover {  //Не работает ховер!!!
+    background-color: red;
+  }
+
+  &:active {
+    background-color: blue;
+  }
 }
 
 .main-nav__nav-item:nth-child(n+2) {
   border-top: 1px solid #9ac2db;
 }
 
-.main-nav__nav-item:nth-child(-n+4) {
+.main-nav__nav-item:nth-child(-n+3) {
   border-bottom: 1px solid #678fa8;
 }
 
@@ -28,6 +36,7 @@
 }
 
 .main-nav__link {
+  display: block;
   font-family: @font-base;
   cursor: pointer;
   width: 100%;
@@ -38,6 +47,12 @@
   text-decoration: none;
   text-transform: uppercase;
   color: @text-white;
+  // background-color: aqua;
+
+
+  // &:hover {
+  //   background-color: red;
+  // }
 }
 
 .main-nav__logo-mobile {

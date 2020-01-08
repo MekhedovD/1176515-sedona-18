@@ -38,6 +38,27 @@
 
   .emotion__title {
     font-size: 19px;
+    position: relative;
+  }
+
+  .emotion__title::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .emotion__title::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
   }
 
   .emotion__text {
@@ -60,6 +81,14 @@
   .emotion__title {
     font-size: 19px;
     letter-spacing: 0;
+  }
+
+  .emotion__title::before {
+    width: 279px;
+  }
+
+  .emotion__title::after {
+    width: 279px;
   }
 
   .emotion textarea::placeholder {

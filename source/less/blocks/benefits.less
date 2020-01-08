@@ -1,5 +1,4 @@
 .benefits {
-  // position: relative;
   list-style: none;
   padding: 0;
   width: 70%;
@@ -39,7 +38,7 @@
 }
 
 .benefits__item:nth-child(1)::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 12px;
   right: 0;
@@ -47,13 +46,13 @@
   left: -46px;
   width: 38px;
   height: 38px;
-  background-image: url(../../img/icon-house.svg);
+  background-image: url("../../img/icon-house.svg");
   background-repeat: no-repeat;
   background-size: 38px;
 }
 
 .benefits__item:nth-child(2)::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 10px;
   right: 0;
@@ -61,13 +60,13 @@
   left: -43px;
   width: 35px;
   height: 40px;
-  background-image: url(../../img/icon-gift.svg);
+  background-image: url("../../img/icon-gift.svg");
   background-repeat: no-repeat;
   background-size: 33px;
 }
 
 .benefits__item:nth-child(3)::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 18px;
   right: 0;
@@ -75,7 +74,7 @@
   left: -47px;
   width: 38px;
   height: 36px;
-  background-image: url(../../img/icon-burger.svg);
+  background-image: url("../../img/icon-burger.svg");
   background-repeat: no-repeat;
   background-size: 37px;
 }
@@ -114,18 +113,62 @@
     font-size: 14px;
     padding-top: 10%;
   }
+
+  .benefits__item:nth-child(1)::before {
+    top: 60px;
+    left: 44px;
+    width: 75px;
+    height: 75px;
+    background-size: 75px;
+  }
+
+  .benefits__item:nth-child(2)::before {
+    top: 57px;
+    left: 48px;
+    width: 65px;
+    height: 75px;
+    background-size: 63px;
+  }
+
+  .benefits__item:nth-child(3)::before {
+    top: 63px;
+    left: 42px;
+    width: 78px;
+    height: 70px;
+    background-size: 77px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .benefits {
-    display: flex;
+    width: 90%;
   }
 
   .benefits__title {
     font-size: 19px;
+    padding-top: 11%;
+  }
+
+  .benefits__item {
+    width: 27%;
+    padding-top: 12%;
+    padding-bottom: 6%;
   }
 
   .benefits__description {
     font-size: 14px;
+    padding-top: 5%;
+  }
+
+  .benefits__item:nth-child(1)::before {
+    left: 107px;
+  }
+
+  .benefits__item:nth-child(2)::before {
+    left: 113px;
+  }
+
+  .benefits__item:nth-child(3)::before {
+    left: 107px;
   }
 }

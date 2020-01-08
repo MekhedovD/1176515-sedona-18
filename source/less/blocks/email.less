@@ -61,11 +61,37 @@
     flex-direction: column;
   }
 
+  .email__icon-tel,
+  .email__icon-email {
+    display: none;
+  }
+
   .email__contact {
     text-align: center;
     font-size: 19px;
     padding-top: 9%;
     padding-bottom: 4.5%;
+    position: relative;
+  }
+
+  .email__contact::before {
+    content: "";
+    position: absolute;
+    top: 71px;
+    left: -180px;
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .email__contact::after {
+    content: "";
+    position: absolute;
+    top: 71px;
+    right: -180px;
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
   }
 
   .email__tel__title,
@@ -79,6 +105,59 @@
     width: 98%;
     padding-left: 2%;
     margin-top: 1%;
+  }
+
+  .email__tel,
+  .email__box {
+    position: relative;
+  }
+
+  .email__icon-tel {
+    display: block;
+    position: absolute;
+    top: 27px;
+    right: 1px;
+    width: 58px;
+    height: 58px;
+    background-color: #00000010;
+  }
+
+  .email__icon-tel::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 0;
+    bottom: 0;
+    left: 20px;
+    width: 19px;
+    height: 19px;
+    background-image: url(../../img/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+  }
+
+  .email__icon-email {
+    display: block;
+    position: absolute;
+    top: 27px;
+    right: 1px;
+    width: 58px;
+    height: 58px;
+    background-color: #00000010;
+  }
+
+  .email__icon-email::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 0;
+    bottom: 0;
+    left: 20px;
+    width: 19px;
+    height: 19px;
+    background-image: url(../../img/icon-mail.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
   }
 }
 
@@ -130,8 +209,32 @@
     padding-bottom: 7.5%;
   }
 
+  .email__contact::before {
+    top: 114px;
+    left: -336px;
+    width: 279px;
+  }
+
+  .email__contact::after {
+    top: 114px;
+    right: -336px;
+    width: 279px;
+  }
+
   .email__input-tel,
   .email__input-box {
     font-size: 16px;
+  }
+
+  .email__icon-tel {
+    top: 0;
+    right: 79px;
+    padding: 0;
+  }
+
+  .email__icon-email {
+    top: 0;
+    right: 24px;
+    padding: 0;
   }
 }

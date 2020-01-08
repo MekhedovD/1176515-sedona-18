@@ -1,5 +1,5 @@
 .button {
-  display: inline-block;
+  display: block;
   width: 190px;
   text-align: center;
   padding: 15px 45px;
@@ -7,6 +7,10 @@
   text-decoration: none;
   outline: none;
   background-color: @bg-main-color;
+
+  &:hover {
+    background-color: blue;
+  }
 }
 
 @media (min-width: @tablet-width) {

@@ -63,6 +63,17 @@
   .presentation {
     width: 100%;
     margin-right: 0;
+    position: relative;
+  }
+
+  .presentation::before {
+    position: absolute;
+    content: "";
+    top: 58px;
+    left: -53px;
+    width: 1px;
+    height: 292px;
+    background-color: #dbdbdb;
   }
 
   .presentation__title {
@@ -112,5 +123,10 @@
 
   .presentation__input-name {
     width: 77%;
+  }
+
+  .presentation::before {
+    top: 38px;
+    left: 0;
   }
 }
