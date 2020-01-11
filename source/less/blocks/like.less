@@ -1,6 +1,9 @@
 .like {
+  display: flex;
+  align-items: center;
   text-align: left;
-  margin-left: 7.5%;
+  margin-left: 7%;
+  margin-top: 2.5%;
 }
 
 .like__value {
@@ -9,6 +12,7 @@
   font-weight: bold;
   letter-spacing: 1.2px;
   color: @text-black;
+  padding-left: 4%;
 }
 
 .like button {
@@ -23,12 +27,31 @@
 @media (min-width: @tablet-width) {
   .like {
     position: absolute;
-    top: 36%;
-    right: 25px;
+    top: 19%;
+    right: 15px;
+  }
+
+  .like__value {
+    padding-left: 9px;
+  }
+
+  .like-mini {
+    top: 25%;
+    right: 29px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .like {
+    top: 2px;
+    right: 17px;
+  }
+
+  .like-mini {
+    top: 15px;
+    right: 29px;
+  }
+
   .like__value {
     color: @text-white;
     opacity: 0.9;
