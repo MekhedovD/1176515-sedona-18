@@ -72,14 +72,15 @@
               <fieldset class="feedback__email email">
                 <legend class="email__contact">Контактная информация:</legend>
                 <div class="email__list">
-                  <label class="email__tel email__tel__title"><span><span class="email__title-hidden">Контактный</span> телефон*:</span>
-                    <input class="email__input-tel" type="tel" name="phone-number" placeholder="Введите телефон" required>
+                  <label for="input-tel" class="email__tel email__tel__title"><span><span class="email__title-hidden">Контактный</span> телефон*:</span>
                     <div class="email__icon-tel"></div>
                   </label>
-                  <label class="email__box email__box__title"><span>Электронная почта*:</span>
-                    <input class="email__input-box" type="email" name="email" placeholder="Введите e-mail" required>
-                    <div class="email__icon-email"></div> <!--Не могу прицелиться в span-->
+                  <input class="email__input-tel" type="tel" name="phone-number" placeholder="Введите телефон" id="input-tel" required>
+
+                  <label for="input-box" class="email__box email__box__title"><span>Электронная почта*:</span>
+                    <div class="email__icon-email"></div>
                   </label>
+                  <input class="email__input-box" type="email" name="email" placeholder="Введите e-mail" id="input-box" required>
                 </div>
               </fieldset>
 
@@ -89,9 +90,11 @@
                 <div class="email__list">
                   <label class="email__tel email__tel__title"><span><span class="email__title-hidden">Контактный</span> телефон*:</span>
                     <input class="email__input-tel" type="tel" name="phone-number" placeholder="Введите телефон" required>
+                    <div class="email__icon-tel"></div>
                   </label>
                   <label class="email__box email__box__title"><span>Электронная почта*:</span>
                     <input class="email__input-box" type="email" name="email" placeholder="Введите e-mail" required>
+                    <div class="email__icon-email"></div>
                   </label>
                 </div>
               </fieldset> -->
