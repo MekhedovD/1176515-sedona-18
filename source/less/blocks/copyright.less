@@ -1,7 +1,8 @@
 .copyright {
   display: flex;
   justify-content: center;
-  // align-items: center;
+  cursor: pointer;
+  align-items: center;
 }
 
 .copyright__title {
@@ -18,16 +19,25 @@
   position: relative;
 }
 
-.copyright__link img {
+.copyright__link::after {
+  content: "";
+  background-image: url("../img/logo-htmlacademy.svg");
+  width: 27px;
+  height: 34px;
   position: absolute;
-  top: -13px;
-  right: -42px;
-  width: 40px;
+  top: -4px;
+  right: -35px;
 }
 
-.copyright__html { // цвет иконки?
-  fill: black;
+.copyright__link:hover::after {
+  background-image: url("../img/logo-htmlacademy0.svg");
 }
+
+.copyright__link:active::after {
+  background-image: url("../img/logo-htmlacademy.svg");
+  opacity: 0.3;
+}
+
 
 @media (min-width: @tablet-width) {
   .copyright__title {

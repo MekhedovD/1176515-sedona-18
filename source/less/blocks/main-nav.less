@@ -15,7 +15,7 @@
 
   &:active {
     background-color: #5496bd;
-    color: rgba(255, 255, 255, 0.3);
+    // color: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -45,15 +45,8 @@
   font-weight: bold;
   line-height: 3.4;
   text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
   color: @text-white;
-  // background-color: aqua;
-
-
-  // &:hover {
-  //   background-color: red;
-  // }
 }
 
 .main-nav__logo-mobile {
@@ -111,6 +104,15 @@
     background-color: white;
     width: 153px;
     border: none;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    &:active {
+      background-color: transparent;
+      // color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   .main-nav__nav-item:nth-child(n+2) {
@@ -125,6 +127,14 @@
     font-size: 15px;
     letter-spacing: -1px;
     color: @text-black;
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 
   .main-nav__button-closed,

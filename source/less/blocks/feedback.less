@@ -64,7 +64,8 @@
   padding: 0;
 }
 
-.feedback-required {
+.feedback-required,
+.feedback br {
   display: none;
 }
 
@@ -85,9 +86,9 @@
   }
 
   .feedback__remark {
-    letter-spacing: 0.5px;
+    letter-spacing: 0.2px;
     font-size: 12px;
-    width: 60%;
+    width: 61%;
     padding-bottom: 7%;
   }
 
@@ -119,6 +120,10 @@
     text-align: right;
     text-transform: uppercase;
     color: @text-black;
+  }
+
+  .feedback br {
+    display: block;
   }
 }
 
