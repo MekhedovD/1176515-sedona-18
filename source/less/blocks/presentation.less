@@ -1,28 +1,146 @@
+.presentation {
+  margin-bottom: 32px;
+  width: 90%;
+}
+
 .presentation__title {
   font-family: @font-base;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.446;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   color: @text-black;
+  padding-bottom: 7%;
+  padding-top: 7%;
 }
 
 .presentation__name,
 .presentation__surname,
 .presentation__patronymic {
   font-family: @font-base;
-  line-height: 1.85;
+  line-height: 4.2;
   font-size: 14px;
   text-transform: uppercase;
-  // text-align: center;
+  letter-spacing: -1px;
+  padding-bottom: 7%;
+  display: flex;
+  width: auto;
+}
+
+.presentation input::placeholder {
   color: @text-black;
 }
 
-.presentation input[type="text"] {
+.presentation__input-name {
   font-family: @font-base;
   font-weight: bold;
   line-height: 1.85;
-  font-size: 14px;
+  font-size: 16px;
   color: @text-black;
+  width: 72%;
+  border: none;
+  background-color: @bg-input;
+  padding-left: 8%;
+  margin-left: 6%;
+  outline-color: #e5e5e5;
+}
+
+.presentation__input-surname,
+.presentation__input-patronymic {
+  font-family: @font-base;
+  font-weight: bold;
+  line-height: 1.85;
+  font-size: 16px;
+  color: @text-black;
+  width: 59%;
+  border: none;
+  background-color: @bg-input;
+  padding-left: 8%;
+  margin-left: 7%;
+  outline-color: #e5e5e5;
+}
+
+.presentation__input-name,
+.presentation__input-surname,
+.presentation__input-patronymic {
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .presentation {
+    width: 100%;
+    margin-right: 0;
+    position: relative;
+  }
+
+  .presentation::before {
+    position: absolute;
+    content: "";
+    top: 58px;
+    left: -53px;
+    width: 1px;
+    height: 292px;
+    background-color: #dbdbdb;
+  }
+
+  .presentation__title {
+    text-align: left;
+    font-size: 19px;
+    padding-bottom: 53px;
+    padding-top: 8%;
+  }
+
+  .presentation__name,
+  .presentation__surname,
+  .presentation__patronymic,
+  .presentation input[type="text"] {
+    font-size: 15px;
+    line-height: 4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .presentation__title {
+    font-size: 19px;
+    padding-top: 6.5%;
+    padding-bottom: 56px;
+    margin-left: 15%;
+  }
+
+  .presentation__name,
+  .presentation__surname,
+  .presentation__patronymic {
+    font-size: 14px;
+    padding-bottom: 3%;
+    margin-left: 15%;
+  }
+
+  .presentation input[type="text"] {
+    font-size: 16px;
+    line-height: 3.8;
+  }
+
+  .presentation__input-name,
+  .presentation__input-surname,
+  .presentation__input-patronymic {
+    margin-left: 5%;
+    padding-left: 5%;
+    width: 69%;
+  }
+
+  .presentation__input-name {
+    width: 77%;
+  }
+
+  .presentation::before {
+    top: 38px;
+    left: 0;
+  }
 }

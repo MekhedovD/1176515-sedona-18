@@ -1,7 +1,85 @@
+.like {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-left: 7%;
+  margin-top: 4.5%;
+}
+
 .like__value {
   font-family: @font-base;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1.2px;
   color: @text-black;
+  padding-left: 11%;
+}
+
+.like button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  background: transparent;
+  position: relative;
+}
+
+.like__button::after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 0;
+  width: 23px;
+  height: 21px;
+  background-image: url("../img/icon-like.svg");
+  margin-right: 13px;
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .like {
+    position: absolute;
+    top: 12%;
+    right: 15px;
+  }
+
+  .like__value {
+    padding-left: 9px;
+  }
+
+  .like-mini {
+    top: 25%;
+    right: 29px;
+  }
+
+  .like__button::after {
+    top: -14px;
+    left: -24px;
+    background-image: url("../img/icon-like.svg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .like {
+    top: -16px;
+    right: 17px;
+  }
+
+  .like-mini {
+    top: 15px;
+    right: 29px;
+  }
+
+  .like__value {
+    color: @text-white;
+    opacity: 0.9;
+  }
+
+  .like__button::after {
+    top: -14px;
+    left: -24px;
+    background-image: url("../img/icon-like0.svg");
+    opacity: 0.9;
+  }
 }

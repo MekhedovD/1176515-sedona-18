@@ -1,19 +1,53 @@
 .copyright {
   display: flex;
   justify-content: center;
+  cursor: pointer;
   align-items: center;
 }
 
 .copyright__title {
   font-family: @font-base;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.86;
   text-align: center;
   text-transform: uppercase;
   color: @text-black;
-  padding-top: 10px;
 }
 
 .copyright__link {
   display: flex;
+  position: relative;
+}
+
+.copyright__link::after {
+  content: "";
+  background-image: url("../img/logo-htmlacademy.svg");
+  width: 27px;
+  height: 34px;
+  position: absolute;
+  top: -4px;
+  right: -35px;
+}
+
+.copyright__link:hover::after {
+  background-image: url("../img/logo-htmlacademy0.svg");
+}
+
+.copyright__link:active::after {
+  background-image: url("../img/logo-htmlacademy.svg");
+  opacity: 0.3;
+}
+
+
+@media (min-width: @tablet-width) {
+  .copyright__title {
+    font-size: 14px;
+    letter-spacing: -1px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__title {
+    font-size: 14px;
+  }
 }
