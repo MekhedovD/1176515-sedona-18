@@ -14,6 +14,15 @@
   color: @text-black;
 }
 
+.emotion__text {
+  width: 275px;
+  height: 160px;
+  margin-top: 6px;
+  background-color: @bg-input;
+  border: none;
+  resize: none;
+}
+
 .emotion textarea::placeholder {
   font-family: @font-base;
   font-weight: bold;
@@ -22,13 +31,7 @@
   color: @text-black;
   width: 90%;
   padding-left: 6%;
-  padding-top: 3%;
-}
-
-.emotion__text {
-  margin-top: 6px;
-  background-color: @bg-input;
-  border: none;
+  padding-top: 5%;
 }
 
 @media (min-width: @tablet-width) {
@@ -62,6 +65,7 @@
   }
 
   .emotion__text {
+    width: 100%;
     margin-top: 41px;
   }
 
