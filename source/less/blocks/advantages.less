@@ -29,10 +29,10 @@
 
 .advantages__title-header {
   font-family: @font-base;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 1.24;
-  letter-spacing: -0.8px;
+  // letter-spacing: -0.8px;
   text-transform: uppercase;
   text-align: center;
   color: @text-white;
@@ -43,7 +43,7 @@
 .advantages__title-number,
 .advantages__title-remark {
   font-family: @font-base;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
   text-align: center;
@@ -53,7 +53,7 @@
 }
 
 .advantages__title-number {
-  padding-top: 4.5%;
+  padding-top: 4%;
 }
 
 .advantages__title-remark {
@@ -61,7 +61,8 @@
   padding-bottom: 13%;
 }
 
-.advantages__title-header br {
+.advantages__title-header br,
+.advantages__title-remark br {
   display: none;
 }
 
@@ -89,23 +90,24 @@
   }
 
   .advantages__title-header {
-    font-size: 19px;
+    font-size: 21px;
     width: 70%;
     padding-top: 18%;
-    padding-bottom: 2%;
+    padding-bottom: 0.5%;
   }
 
   .advantages__title-remark {
-    font-size: 13px;
+    font-size: 14px;
     width: 70%;
-    padding-top: 10%;
+    padding-top: 9%;
   }
 
   .advantages__title-number {
-    font-size: 13px;
+    font-size: 14px;
   }
 
-  .advantages__title-header br {
+  .advantages__title-header br,
+  .advantages__title-remark br {
     display: inline;
   }
 }
@@ -129,5 +131,17 @@
   .advantages__title-remark {
     padding-top: 6%;
     padding-bottom: 0;
+  }
+
+  .advantages__title-number {
+    padding-top: 2%;
+  }
+
+  .advantages__item:nth-child(3) .advantages__title-remark {
+    width: 60%;
+  }
+
+  .advantages__title-remark br {
+    display: none;
   }
 }
