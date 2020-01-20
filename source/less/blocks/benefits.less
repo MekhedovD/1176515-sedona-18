@@ -10,7 +10,7 @@
 
 .benefits__title {
   font-family: @font-base;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 1.24;
   text-transform: uppercase;
@@ -23,8 +23,8 @@
 
 .benefits__description {
   font-family: @font-base;
-  font-size: 12px;
-  line-height: 1.9;
+  font-size: 14px;
+  line-height: 1.5;
   text-transform: uppercase;
   text-align: left;
   color: @text-black;
@@ -104,12 +104,11 @@
   .benefits__description,
   .benefits__title {
     text-align: center;
-    letter-spacing: -1px;
     line-height: 1.5;
   }
 
   .benefits__title {
-    font-size: 19px;
+    font-size: 21px;
     padding-top: 14%;
   }
 
@@ -119,7 +118,7 @@
   }
 
   .benefits__description br {
-    display: block;
+    display: inline;
   }
 
   .benefits__item:nth-child(1)::before {
@@ -153,12 +152,12 @@
   }
 
   .benefits__title {
-    font-size: 19px;
+    // font-size: 19px;
     padding-top: 11%;
   }
 
   .benefits__item {
-    width: 27%;
+    width: 26%;
     padding-top: 12%;
     padding-bottom: 6.5%;
   }
@@ -168,15 +167,26 @@
     padding-top: 5%;
   }
 
+  .benefits__description br {
+    display: none;
+  }
+
+  .benefits__item:nth-child(2) br {
+    display: inline;
+  }
+
   .benefits__item:nth-child(1)::before {
-    left: 107px;
+    left: 103px;
+    top: 63px;
   }
 
   .benefits__item:nth-child(2)::before {
-    left: 113px;
+    left: 110px;
+    top: 61px;
   }
 
   .benefits__item:nth-child(3)::before {
-    left: 107px;
+    left: 103px;
+    top: 66px;
   }
 }
