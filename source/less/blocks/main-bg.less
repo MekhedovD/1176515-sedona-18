@@ -10,6 +10,11 @@
   min-width: 320px;
 }
 
+@media (min-resolution: @retina-dppx) {
+  background-image: url("../img/bg-back-mobile@2x.jpg");
+  background-size: auto;
+}
+
 @media (min-width: @tablet-width) {
   .main-bg {
     margin-top: 0;
@@ -17,6 +22,11 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom;
+  }
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-tablet@2x.jpg");
+    background-size: 100%;
   }
 
   .main-bg_big {
@@ -36,6 +46,11 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
+  }
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-desktop@2x.jpg");
+    background-size: 100%;
   }
 
   .main-bg_small {
