@@ -135,11 +135,22 @@
             </div>
           </form>
       </section>
-      <section class="error-modal">
+      <section class="error-modal visually-hidden">
         <div class="error-modal__box">
           <p class="error-modal__title">Что-то пошло не так!</p>
           <p class="error-modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="error-modal__btn">OK</button>
+          <button class="button error-modal__bt">OK</button>
+        </div>
+      </section>
+      <section class="sent-modal visually-hidden">
+        <div class="sent-modal__box">
+          <div class="sent-modal__wrap">
+            <p class="sent-modal__title">Ваш отзыв отправлен!</p>
+            <p class="sent-modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+          </div>
+          <div class="sent-modal__bg-gray">
+            <button class="button sent-modal__bt">Закрыть окно</button>
+          </div>
         </div>
       </section>
     </main>
