@@ -75,12 +75,12 @@
                 <legend class="email__contact">Контактная информация:</legend>
                 <div class="email__list">
                   <label for="input-tel" class="email__tel email__tel__title"><span><span class="email__title-hidden">Контактный</span> телефон*:</span>
-                    <div class="email__icon-tel"></div>
+                    <span class="email__icon-tel"></span>
                   </label>
                   <input class="email__input-tel" type="tel" name="phone-number" placeholder="Введите телефон" id="input-tel" required>
 
                   <label for="input-box" class="email__box email__box__title"><span>Электронная почта*:</span>
-                    <div class="email__icon-email"></div>
+                    <span class="email__icon-email"></span>
                   </label>
                   <input class="email__input-box" type="email" name="email" placeholder="Введите e-mail" id="input-box" required>
                 </div>
@@ -134,6 +134,13 @@
               <span class="feedback-required">*-Обязательные поля</span></div>
             </div>
           </form>
+      </section>
+      <section class="error-modal">
+        <div class="error-modal__box">
+          <p class="error-modal__title">Что-то пошло не так!</p>
+          <p class="error-modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="error-modal__btn">OK</button>
+        </div>
       </section>
     </main>
 
