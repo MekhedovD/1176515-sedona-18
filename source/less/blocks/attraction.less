@@ -1,5 +1,5 @@
 .attraction {
-  margin-bottom: 34px;
+  margin-bottom: 40px;
   width: 90%;
 }
 
@@ -17,13 +17,15 @@
   text-align: center;
   padding-bottom: 2%;
   padding-top: 6%;
+  margin: auto;
+  width: 100%;
   color: @text-black;
 }
 
 .attraction__label {
   font-family: @font-base;
   font-weight: bold;
-  line-height: 4.5;
+  line-height: 4.4;
   font-size: 18px;
   text-align: left;
   color: @text-black;
@@ -80,12 +82,12 @@
 @media (min-width: @tablet-width) {
   .attraction {
     margin-bottom: 72px;
+    width: 100%;
   }
 
   .attraction__title {
     font-size: 21px;
-    width: 60%;
-    padding-top: 5.5%;
+    padding-top: 5%;
     padding-bottom: 4%;
     position: relative;
   }
@@ -93,21 +95,26 @@
   .attraction__title::before {
     content: "";
     position: absolute;
+    display: block;
     top: 61px;
-    left: -148px;
+    left: 0;
     width: 125px;
     height: 1px;
     background-color: #dbdbdb;
+    z-index: 2;
   }
 
   .attraction__title::after {
     content: "";
     position: absolute;
+    display: block;
     top: 61px;
-    right: -148px;
+    right: 0;
     width: 125px;
     height: 1px;
     background-color: #dbdbdb;
+
+    z-index: 2;
   }
 
   .attraction__label {
@@ -129,11 +136,11 @@
   }
 
   .attraction__list {
-    width: 89%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 10%;
+    padding-left: 14%;
   }
 }
 
@@ -152,25 +159,22 @@
   }
 
   .attraction__title {
-    width: 40%;
     padding-top: 7%;
     padding-bottom: 2.5%;
   }
 
   .attraction__title::before {
     top: 99px;
-    left: -274px;
-    width: 279px;
+    width: 300px;
   }
 
   .attraction__title::after {
     top: 99px;
-    right: -274px;
-    width: 279px;
+    width: 300px;
   }
 
   .attraction__label {
     font-size: 18px;
-    width: 19%;
+    width: 21%;
   }
 }

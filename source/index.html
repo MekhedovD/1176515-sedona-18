@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="preolad" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preolad" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -55,6 +57,9 @@
               <p class="advantages__title-remark">Седона не аттракцион для туристов, там<br> течёт своя жизнь</p>
             </div>
             <picture class="advantages__item_img">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
               <img src="img/main-city-mobile@1x.jpg" alt="Дом" srcset="img/main-city-mobile@2x.jpg 2x">
@@ -83,6 +88,9 @@
               <p class="advantages__title-remark">Да, по нему можно пройтись если Вы осмелитесь, конечно</p>
             </div>
             <picture class="advantages__item_img">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
               <img src="img/main-bridge-mobile@1x.jpg" alt="Скалы" srcset="img/main-bridge-mobile@2x.jpg 2x">
@@ -117,6 +125,9 @@
           <a href="" class="button interest__bt">Найти гостиницу</a>
         </div>
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
           <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
           <img class="interest__map" src="img/bg-map-mobile@1x.jpg" alt="Карта Аризоны" srcset="img/bg-map-mobile@2x.jpg 2x">
@@ -142,5 +153,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>
