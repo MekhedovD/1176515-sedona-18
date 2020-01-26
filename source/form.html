@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
 
@@ -43,9 +43,11 @@
     <main class="main">
       <h1 class="visually-hidden">Седона для туристов</h1>
 
-      <section class="main-bg">
+      <section class="main-bg2">
         <h2 class="visually-hidden">Привественный текст</h2>
-        <img class="main-bg_small" src="img/text-sedona.svg" alt="Добро пожаловать в Седону" width="220" height="157">
+        <!-- <img class="main-bg_small" src="img/text-sedona.svg" alt="Добро пожаловать в Седону" width="220" height="157"> -->
+        <img class="main-bg_small-m" src="img/text-sedona.svg" alt="Добро пожаловать в Седону" width="230" height="40">
+        <img class="main-bg_small" src="img/text-sedona.svg" alt="" width="460" height="80">
       </section>
 
       <section class="feedback">
@@ -103,7 +105,7 @@
             </div>
             <div class="feedback__wr">
               <fieldset class="feedback__attractions attraction">
-                <legend class="attraction__title">Посещенные достопримечательности:</legend>
+                <legend class="attraction__title">Посещенные<br> достопримечательности:</legend>
                 <div class="attraction__list">
                   <label class="attraction__label">
                     <input type="checkbox" name="bridge" checked>
@@ -133,6 +135,25 @@
             </div>
           </form>
       </section>
+      <section class="error-modal visually-hidden">
+        <div class="error-modal__box">
+          <p class="error-modal__title">Что-то пошло не так!</p>
+          <p class="error-modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <!-- <button class="error-modal__btn">OK</button> -->
+          <button class="button error-modal__bt">OK</button>
+        </div>
+      </section>
+      <section class="sent-modal visually-hidden">
+        <div class="sent-modal__box">
+          <div class="sent-modal__wrap">
+            <p class="sent-modal__title">Ваш отзыв отправлен!</p>
+            <p class="sent-modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+          </div>
+          <div class="sent-modal__bg-gray">
+            <button class="button sent-modal__bt">Закрыть окно</button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -148,11 +169,12 @@
           <a class="social__link social__link_yt" href="youtube.com"><img src="img/icon-youtube.svg" alt="YouTube"></a>
         </li>
       </ul>
-    <div class="footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <div class="footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__title">Разработано</span>
-      </a>
-    </div>
-</footer>
-  </body>
+        </a>
+      </div>
+    </footer>
+<script src="js/picturefill.min.js"></script>
+</body>
 </html>

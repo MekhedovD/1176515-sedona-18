@@ -42,7 +42,7 @@
   background-color: @bg-input;
   padding-left: 6.5%;
   margin-left: 6%;
-  outline-color: #e5e5e5;
+  // outline-color: #e5e5e5;
 }
 
 .presentation__input-surname,
@@ -57,7 +57,7 @@
   background-color: @bg-input;
   padding-left: 6.5%;
   margin-left: 7%;
-  outline-color: #e5e5e5;
+  // outline-color: #e5e5e5;
 }
 
 .presentation__input-name,
@@ -69,6 +69,7 @@
 
   &:focus {
     background-color: #ffffff;
+    outline: 1px solid #e5e5e5;
   }
 }
 
@@ -84,6 +85,7 @@
     content: "";
     top: 21px;
     left: -53px;
+    // left: 0;
     width: 1px;
     height: 294px;
     background-color: #dbdbdb;
@@ -101,13 +103,15 @@
   .presentation__surname,
   .presentation__patronymic {
     font-size: 14px;
-    line-height: 4;
+    line-height: 4.2;
     padding-bottom: 8%;
+    // padding-bottom: 6%;
     margin-left: 2%;
   }
 
   .presentation input[type="text"] {
     font-size: 18px;
+    line-height: 3;
   }
 }
 
@@ -124,7 +128,7 @@
   .presentation__patronymic {
     font-size: 14px;
     padding-bottom: 3%;
-    margin-left: 15%;
+    margin-left: 16%;
   }
 
   .presentation input[type="text"] {
@@ -135,8 +139,8 @@
   .presentation__input-name,
   .presentation__input-surname,
   .presentation__input-patronymic {
-    margin-left: 5%;
-    padding-left: 5%;
+    margin-left: 4%;
+    padding-left: 4.5%;
   }
 
   .presentation__input-name {

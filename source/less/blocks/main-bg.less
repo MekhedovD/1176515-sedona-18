@@ -8,6 +8,32 @@
   background-repeat: no-repeat;
   background-position: bottom;
   min-width: 320px;
+  min-height: 390px;
+}
+
+.main-bg2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -28px;
+  background: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  min-width: 320px;
+  min-height: 160px;
+  position: relative;
+}
+
+.main-bg_small-m {
+  position: absolute;
+  top: 51px;
+  left: 45px;
+}
+
+.main-bg_big,
+.main-bg_small {
+  display: none;
 }
 
 @media (min-resolution: @retina-dppx) {
@@ -22,6 +48,21 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom;
+    min-width: 450px;
+    min-height: 519px;
+    position: relative;
+  }
+
+  .main-bg2 {
+    margin-top: 0;
+    background: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    // min-width: 450px;
+    min-height: 290px;
+    // position: relative;
+    width: 100%;
   }
 
   @media (min-resolution: @retina-dppx) {
@@ -29,23 +70,33 @@
     background-size: 100%;
   }
 
+  .main-bg_big-m,
+  .main-bg_small-m {
+    display: none;
+  }
+
   .main-bg_big {
-    width: 463px;
-    height: 518px;
+    display: inline;
+    position: relative;
+    top: -7px;
+    left: 0;
   }
 
   .main-bg_small {
-    width: 463px;
-    height: 289px;
+    display: inline;
+    position: relative;
+    top: -11px;
+    left: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .main-bg {
+  .main-bg2 {
     background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
+    min-height: 301px;
   }
 
   @media (min-resolution: @retina-dppx) {
@@ -53,7 +104,7 @@
     background-size: 100%;
   }
 
-  .main-bg_small {
-    height: 301px;
-  }
+  // .main-bg_small {
+  //   height: 301px;
+  // }
 }

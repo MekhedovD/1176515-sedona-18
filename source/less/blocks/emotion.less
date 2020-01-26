@@ -46,7 +46,7 @@
   .emotion__title::before {
     content: "";
     position: absolute;
-    top: 15px;
+    top: 12px;
     left: 0;
     width: 125px;
     height: 1px;
@@ -56,7 +56,7 @@
   .emotion__title::after {
     content: "";
     position: absolute;
-    top: 15px;
+    top: 12px;
     right: 0;
     width: 125px;
     height: 1px;
@@ -65,7 +65,7 @@
 
   .emotion__text {
     width: 100%;
-    margin-top: 36px;
+    margin-top: 32px;
   }
 
   .emotion textarea::placeholder {
@@ -81,19 +81,24 @@
   }
 
   .emotion__title {
-    padding-top: 1.5%;
+    padding-top: 1%;
     padding-bottom: 0%;
   }
 
-  .emotion__title::before {
-    top: 27px;
+  .emotion__title::before,
+  .emotion__title::after {
+    top: 22px;
     width: 279px;
   }
 
-  .emotion__title::after {
-    top: 27px;
-    width: 279px;
+  .emotion__text {
+    margin-top: 35px;
   }
+
+  // .emotion__title::after {
+  //   top: 27px;
+  //   width: 279px;
+  // }
 
   .emotion textarea::placeholder {
     font-size: 18px;

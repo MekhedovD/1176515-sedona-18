@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
 
@@ -19,10 +19,10 @@
           <li class="main-nav__nav-item">
             <a class="main-nav__link">Фото и видео</a>
           </li>
-          <li class="main-nav__nav-item main-nav__logo-tablet"><a class="main-nv__header-logo">
+          <li class="main-nav__nav-item main-nav__logo-tablet"><a class="main-nv__header-logo" href="https://htmlacademy.ru">
             <img src="img/logo-sedona-tablet.svg" alt="Logo"></a>
           </li>
-          <li class="main-nav__nav-item main-nav__logo-desktop"><a class="main-nv__header-logo">
+          <li class="main-nav__nav-item main-nav__logo-desktop"><a class="main-nv__header-logo" href="https://htmlacademy.ru">
             <img src="img/logo-sedona-desktop.svg" alt="Logo"></a>
           </li>
           <li class="main-nav__nav-item">
@@ -35,7 +35,7 @@
         <button class="main-nav__button-open"><img class="main-nav__img-open" src="img/icon-menu.svg" alt="City of Sedona">
         </button>
         <a class="main-nav__logo-mobile">
-          <img src="img/logo-sedona-mobile.svg" alt="Logo">
+          <img src="img/logo-sedona-mobile.svg" alt="Logo" href="https://htmlacademy.ru">
         </a>
       </nav>
   </header>
@@ -43,9 +43,11 @@
     <main class="main">
       <h1 class="visually-hidden">Седона для туристов</h1>
 
-      <section class="main-bg">
+      <section class="main-bg2">
         <h2 class="visually-hidden">Привественный текст</h2>
-        <img class="main-bg_small" src="img/text-sedona.svg" alt="Добро пожаловать в Седону" width="220" height="157">
+        <!-- <img class="main-bg_small" src="img/text-sedona.svg" alt="Добро пожаловать в Седону" width="220" height="157"> -->
+        <img class="main-bg_small-m" src="img/text-sedona.svg" alt="Добро пожаловать в Седону" width="230" height="40">
+        <img class="main-bg_small" src="img/text-sedona.svg" alt="" width="460" height="80">
       </section>
 
       <section class="photo-gallery">
@@ -57,7 +59,7 @@
         <ul class="photo-gallery__list">
           <li class="photo-gallery__item">
             <picture class="photo-gallery__img">
-              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x img/photo-sunset-desktop@2x.jpg 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
               <img src="img/photo-sunset-mobile@1x.jpg" alt="Дорога" srcset="img/photo-sunset-mobile@2x.jpg 2x">
             </picture>
@@ -164,5 +166,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>
