@@ -13,7 +13,6 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
-// var include = require("posthtml-include");
 
 gulp.task("clean", function() {
   return del("build");
@@ -94,5 +93,5 @@ gulp.task("refresh", function(done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "html",));
 gulp.task("start", gulp.series("build", "server"));
