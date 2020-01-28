@@ -44,7 +44,7 @@
 
   &:focus {
     background-color: #ffffff;
-    outline: 1px solid #e5e5e5;
+    outline-color: #e5e5e5;
   }
 }
 
@@ -71,7 +71,7 @@
   right: 6px;
   width: 61px;
   height: 61px;
-  background-color: rgba(25, 25, 25, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);;
 }
 
 .email__icon-tel::before {
@@ -114,7 +114,7 @@
 
   .email__contact {
     font-size: 21px;
-    padding-top: 11%;
+    padding-top: 9.5%;
     padding-bottom: 4%;
     position: relative;
   }
@@ -122,8 +122,7 @@
   .email__contact::before {
     content: "";
     position: absolute;
-    display: block;
-    top: 82px;
+    top: 73px;
     left: 0;
     width: 125px;
     height: 1px;
@@ -134,8 +133,7 @@
   .email__contact::after {
     content: "";
     position: absolute;
-    display: block;
-    top: 82px;
+    top: 73px;
     right: 0;
     width: 125px;
     height: 1px;
@@ -158,14 +156,8 @@
     line-height: 3;
   }
 
+  .email__icon-email,
   .email__icon-tel {
-    top: 29px;
-    right: 0;
-    width: 56px;
-    height: 56px;
-  }
-
-  .email__icon-email {
     top: 28px;
     right: 0;
     width: 56px;
@@ -227,17 +219,13 @@
 
   .email__contact {
     font-size: 21px;
-    padding-top: 9.5%;
+    padding-top: 9%;
     padding-bottom: 7.5%;
   }
 
-  .email__contact::before {
-    top: 109px;
-    width: 300px;
-  }
-
+  .email__contact::before,
   .email__contact::after {
-    top: 109px;
+    top: 104px;
     width: 300px;
   }
 

@@ -7,7 +7,23 @@
   background-size: auto;
   background-repeat: no-repeat;
   background-position: bottom;
-  min-width: 320px;
+  height: 390px;
+}
+
+.main-bg_foto,
+.main-bg_form {
+  height: 157px;
+}
+
+.main-bg_big {
+  width: 280px;
+  height: auto;
+}
+
+.main-bg_small {
+  width: 230px;
+  height: auto;
+  margin-top: -12px;
 }
 
 @media (min-resolution: @retina-dppx) {
@@ -22,21 +38,26 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom;
+    height: 519px;
+  }
+  .main-bg_big {
+    width: auto;
+    margin-top: -14px;
+  }
+
+  .main-bg_small {
+    width: 460px;
+    margin-top: -22px;
+  }
+
+  .main-bg_foto,
+  .main-bg_form {
+    height: 290px;
   }
 
   @media (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-back-tablet@2x.jpg");
     background-size: 100%;
-  }
-
-  .main-bg_big {
-    width: 463px;
-    height: 518px;
-  }
-
-  .main-bg_small {
-    width: 463px;
-    height: 289px;
   }
 }
 
@@ -53,7 +74,8 @@
     background-size: 100%;
   }
 
-  .main-bg_small {
+  .main-bg_foto,
+  .main-bg_form {
     height: 301px;
   }
 }
