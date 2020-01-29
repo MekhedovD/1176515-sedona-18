@@ -14,15 +14,15 @@
         </button>
         <ul class="main-nav__nav-list">
           <li class="main-nav__nav-item main-nav__nav-item_active">
-            <a class="main-nav__link" href="foto.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__nav-item">
-            <a class="main-nav__link" href="foto.html">Фото и видео</a>
+            <a class="main-nav__link" href="photo.html">Фото и видео</a>
           </li>
-          <li class="main-nav__nav-item main-nav__logo-tablet"><a class="main-nv__header-logo">
+          <li class="main-nav__nav-item main-nav__logo-tablet"><a class="main-nav__header-logo" href="index.html">
             <img src="img/logo-sedona-tablet.svg" alt="Logo"></a>
           </li>
-          <li class="main-nav__nav-item main-nav__logo-desktop"><a class="main-nv__header-logo">
+          <li class="main-nav__nav-item main-nav__logo-desktop"><a class="main-nav__header-logo" href="index.html">
             <img src="img/logo-sedona-desktop.svg" alt="Logo"></a>
           </li>
           <li class="main-nav__nav-item">
@@ -34,7 +34,7 @@
         </ul>
         <button class="main-nav__button-open"><img class="main-nav__img-open" src="img/icon-menu.svg" alt="City of Sedona">
         </button>
-        <a class="main-nav__logo-mobile">
+        <a class="main-nav__logo-mobile" href="index.html">
           <img src="img/logo-sedona-mobile.svg" alt="Logo">
         </a>
       </nav>
@@ -44,7 +44,7 @@
       <h1 class="visually-hidden">Седона для туристов</h1>
 
       <section class="main-bg main-bg_form">
-        <h1 class="visually-hidden">Седона для туристов</h1>
+        <h2 class="visually-hidden">Седона для туристов</h2>
         <img class="main-bg_small" src="img/text-sedona.svg" alt="Добро пожаловать в Седону">
       </section>
       <section class="feedback">
@@ -52,7 +52,7 @@
             <h3 class="feedback__header">Оставьте свой отзыв</h3>
             <p class="feedback__remark">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br> а так же
               о посещенных Вами достопримечательностях</p>
-          <form class="feedback__form" action="https://echo.htmlacademy.ru">
+          <form class="feedback__form" method="GET" action="https://echo.htmlacademy.ru">
             <div class="feedback__wr">
               <fieldset class="feedback__presentation presentation">
                 <legend class="presentation__title">Представьтесь:</legend>
@@ -127,12 +127,13 @@
               <div class="feedback__emotions emotion">
                 <h3 class="emotion__title">Опишите свои эмоции:</h3>
                 <textarea class="emotion__text" placeholder="Опишите подробно все свои восторги" cols="30" rows="10"></textarea>
-                <a class="button feedback__bt">Отправить отзыв</a>
+                <input type="submit" class="button feedback__bt" value="Отправить отзыв">
               <span class="feedback-required">*-Обязательные поля</span></div>
             </div>
           </form>
       </section>
       <section class="error-modal visually-hidden">
+        <h2>Сообщение об ошибке</h2>
         <div class="error-modal__box">
           <p class="error-modal__title">Что-то пошло не так!</p>
           <p class="error-modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
@@ -140,6 +141,7 @@
         </div>
       </section>
       <section class="sent-modal visually-hidden">
+        <h2>Сообщение об отправке</h2>
         <div class="sent-modal__box">
           <div class="sent-modal__wrap">
             <p class="sent-modal__title">Ваш отзыв отправлен!</p>
